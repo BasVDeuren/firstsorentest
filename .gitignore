@@ -1,0 +1,11 @@
+# Ignore everything
+*
+
+# But not these files...
+!.gitignore
+!app/dist/
+!gulpfile.js
+# etc...
+
+# ...even if they are in subdirectories
+!*/
