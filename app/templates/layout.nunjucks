@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+{% include "head.nunjucks" %}	 
+</head>
+<body id="body">
+<div class="container-fluid wrapper">
+	<div id="id-container" class="col-md-offset-2 col-md-8">
+		{% block title %} {% endblock%}
+			{% include "navigation.nunjucks" %}
+		{% block content%} {% endblock%}
+		<div class="push"></div>
+	</div>
+</div>
+{% include "footer.nunjucks" %}
+{% include "js.nunjucks" %}
+</body>
+</html>

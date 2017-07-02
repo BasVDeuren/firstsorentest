@@ -1,0 +1,58 @@
+#body a, h1, p, h2 {
+	color: white !important;
+}
+
+body {
+	background-color: #d3eef2;
+}
+
+#title {
+	margin-bottom: 50px;
+}
+
+#id-container {
+	background-color: #6a0f11;
+	min-height: 100%;
+    height: auto !important;
+}
+
+/* Navigation */
+#navigation-bar {
+	padding-left: 42%;
+	background-color: #802426;
+}
+
+#navigation-bar li.active {
+	background: rgba(81, 11, 11, 0.98);
+	color: black;
+}
+#navigation-bar li.active a {
+	background: rgba(81, 11, 11, 0.98);
+	color: black;
+}
+
+#navigation-bar li :hover{
+	background: rgba(81, 11, 11, 0.98);
+	color: black;
+}
+#navigation-bar li a :hover{
+	background: rgba(81, 11, 11, 0.98);
+	color: black;
+}
+
+/* FOOTER */
+#footer {
+	margin-bottom: 0px;
+}
+
+html, body {
+    height: 100%;
+}
+.wrapper {
+    min-height: 100%;
+    height: 100%;
+    margin: 0 auto -155px; /* the bottom margin is the negative value of the footer's height */
+}
+.footer, .push {
+    height: 155px; /* .push must be the same height as .footer */
+}

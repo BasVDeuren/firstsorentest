@@ -1,0 +1,5 @@
+{% extends "layout.nunjucks" %}
+
+{% block title %} 
+<h1 id="title" class="text-center">Ippon deals</h1>
+{% endblock %}
