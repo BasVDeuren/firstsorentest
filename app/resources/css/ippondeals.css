@@ -1,4 +1,4 @@
-#body a, h1, p, h2 {
+#body a, h1, p, h2 , label{
 	color: white !important;
 }
 
@@ -14,6 +14,13 @@ body {
 	background-color: #6a0f11;
 	min-height: 100%;
     height: auto !important;
+}
+.background-image {
+	background-image: url("../img/testtransparantop.png");
+	background-repeat: no-repeat;
+	background-size:contain;
+	position: absolute;
+	height: 100%;
 }
 
 /* Navigation */
@@ -42,7 +49,10 @@ body {
 
 /* FOOTER */
 #footer {
-	margin-bottom: 0px;
+	border-top-color: white;
+	border-top-style: solid;
+	border-top-width: 1,5px;
+	position: relative;
 }
 
 html, body {

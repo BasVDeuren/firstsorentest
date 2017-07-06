@@ -1,9 +1,9 @@
 <nav class="navbar navbar-default">
   <div class="container-fluid" id="navigation-bar">
     <ul class="nav navbar-nav">
-      <li class="active"><a href="#">Home</a></li>
-      <li><a href="#">Webshop</a></li>
-      <li><a href="#">Contact</a></li>
+      <li id="home" {% if homepage %} class="active" {% endif %}><a href="index.html">Home</a></li>
+      <li id="webshop" {% if webshop %} class="active" {% endif %}><a href="webshop.html">Webshop</a></li>
+      <li id="contact" {% if contact %} class="active" {% endif %}><a href="#">Contact</a></li>
     </ul>
   </div>
 </nav>

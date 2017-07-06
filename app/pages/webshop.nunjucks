@@ -1,0 +1,15 @@
+{% extends "layout.nunjucks" %}
+{% set homepage = true %}
+
+{% block content %}
+<div id="shopForm">
+<form id="frakkenForm">
+	<label>Aantal judo frakken: </label><input id="numberOfJudoFrakken" class="form-input"/>
+	<label>Prijs per judo frak: </label><input id="pricePerFrak" class="form-input"/>
+	<hr/>
+	<label>EmailAdres: </label><input id="email" class="form-input"/>	
+	<label>Naam: </label><input id="name" class="form-input" />
+	<button id="sendMailButton">sendMailButton</button>
+</form>
+</div>
+{% endblock %}
