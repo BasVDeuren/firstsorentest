@@ -7,13 +7,15 @@
 </head>
 <body id="body">
 <div class="container-fluid wrapper">
-	<div id="id-container" class="col-md-offset-2 col-md-8 background-image">
+	<div class="color-left-right col-md-2"></div>
+	<div id="id-container" class="col-md-8 background-image">
 		<h1 id="title" class="text-center">Ippon deals</h1>
 		{% block title %} {% endblock%}
 			{% include "navigation.nunjucks" %}
 		{% block content%} {% endblock%}
 		<div class="push"></div>
 	</div>
+	<div class="color-right-left col-md-2"></div>
 </div>
 {% include "footer.nunjucks" %}
 {% include "js.nunjucks" %}

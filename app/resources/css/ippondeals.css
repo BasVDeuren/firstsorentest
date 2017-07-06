@@ -2,12 +2,18 @@
 	color: white !important;
 }
 
-body {
-	background-color: #d3eef2;
-}
-
 #title {
 	margin-bottom: 50px;
+}
+
+.color-left-right {
+	min-height:100%;
+	background: linear-gradient(to right, #803536 0%, #6a0f11 100%);
+}
+
+.color-right-left {
+	min-height:100%;
+	background: linear-gradient(to left, #803536 0%, #6a0f11 100%);
 }
 
 #id-container {
@@ -19,7 +25,6 @@ body {
 	background-image: url("../img/testtransparantop.png");
 	background-repeat: no-repeat;
 	background-size:contain;
-	position: absolute;
 	height: 100%;
 }
 
