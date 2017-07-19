@@ -7,11 +7,11 @@
 </head>
 <body id="body">
 <div class="container-fluid wrapper">
-	<div class="color-left-right col-md-2"></div>
+	<div class="color-left-right col-lg-2 col-md-1 hidden-xs hidden-sm"></div>
 	{% if webshop %}
-	<div id="id-container" class="col-md-8 background-image-2">
+	<div id="id-container" class="col-lg-8 col-md-10 background-image-2">
 	{% else %}
-	<div id="id-container" class="col-md-8 background-image">
+	<div id="id-container" class="col-lg-8 col-md-10 background-image">
 	{% endif %}
 		<h1 id="title" class="text-center">Ippon deals</h1>
 		{% block title %} {% endblock%}
@@ -19,7 +19,7 @@
 		{% block content%} {% endblock%}
 		<div class="push"></div>
 	</div>
-	<div class="color-right-left col-md-2"></div>
+	<div class="color-right-left col-lg-2 col-md-1 hidden-xs hidden-sm"></div>
 </div>
 {% include "footer.nunjucks" %}
 {% include "js.nunjucks" %}
