@@ -7,7 +7,8 @@
 <!--css-->
 <link rel="stylesheet" href="../resources/bootstrap/css/bootstrap.min.css">
 <link rel="stylesheet" href="../resources/bootstrap/css/bootstrap-theme.min.css">
-<link rel="stylesheet" href="../resources/css/ippondeals.css">	 
+<link rel="stylesheet" href="../resources/css/ippondeals.css">
+<script src="https://use.fontawesome.com/3052fc8cb8.js"></script>	 
 </head>
 <body id="body">
 <div class="container-fluid wrapper">
@@ -28,14 +29,392 @@
 </nav>
 		
 <div id="shopForm">
-<form id="frakkenForm">
-	<label>Aantal judo frakken: </label><input id="numberOfJudoFrakken" class="form-input"/>
-	<label>Prijs per judo frak: </label><input id="pricePerFrak" class="form-input"/>
-	<hr/>
-	<label>EmailAdres: </label><input id="email" class="form-input"/>	
-	<label>Naam: </label><input id="name" class="form-input" />
-	<button id="sendMailButton">sendMailButton</button>
-</form>
+
+	<div id="judShir" class="judogi">
+		<label>JUDOGI SHIRO</label>
+		<div class="input-group spinner">
+			<input type="text" class="form-control" value="0">
+			<div class="input-group-btn-vertical">
+				<button class="btn btn-default" type="button"><i class="fa fa-caret-up"></i></button>
+				<button class="btn btn-default" type="button"><i class="fa fa-caret-down"></i></button>
+			</div>
+		</div>
+	</div>
+
+	<div id="judHaji" class="judogi">
+		<label>JUDOGI HAJIME</label>
+		<div class="input-group spinner">
+			<input type="text" class="form-control" value="0">
+			<div class="input-group-btn-vertical">
+				<button class="btn btn-default" type="button"><i class="fa fa-caret-up"></i></button>
+				<button class="btn btn-default" type="button"><i class="fa fa-caret-down"></i></button>
+			</div>
+		</div>
+	</div>
+
+	<div id="judKodo" class="judogi">
+		<label>JUDOGI KODOMO</label>
+		<div class="input-group spinner">
+			<input type="text" class="form-control" value="0">
+			<div class="input-group-btn-vertical">
+				<button class="btn btn-default" type="button"><i class="fa fa-caret-up"></i></button>
+				<button class="btn btn-default" type="button"><i class="fa fa-caret-down"></i></button>
+			</div>
+		</div>
+	</div>
+
+	<div id="judHaya" class="judogi">
+		<label>JUDOGI HAYATO</label>
+		<div class="input-group spinner">
+			<input type="text" class="form-control" value="0">
+			<div class="input-group-btn-vertical">
+				<button class="btn btn-default" type="button"><i class="fa fa-caret-up"></i></button>
+				<button class="btn btn-default" type="button"><i class="fa fa-caret-down"></i></button>
+			</div>
+		</div>
+	</div>
+
+	<div id="judHayaBlue" class="judogi">
+		<label>JUDOGI HAYATO BLUE</label>
+		<div class="input-group spinner">
+			<input type="text" class="form-control" value="0">
+			<div class="input-group-btn-vertical">
+				<button class="btn btn-default" type="button"><i class="fa fa-caret-up"></i></button>
+				<button class="btn btn-default" type="button"><i class="fa fa-caret-down"></i></button>
+			</div>
+		</div>
+	</div>
+
+	<div id="judKeik" class="judogi">
+		<label>JUDOGI KEIKO</label>
+		<div class="input-group spinner">
+			<input type="text" class="form-control" value="0">
+			<div class="input-group-btn-vertical">
+				<button class="btn btn-default" type="button"><i class="fa fa-caret-up"></i></button>
+				<button class="btn btn-default" type="button"><i class="fa fa-caret-down"></i></button>
+			</div>
+		</div>
+	</div>
+
+	<div id="judShia" class="judogi">
+		<label>JUDOGI SHIAI</label>
+		<div class="input-group spinner">
+			<input type="text" class="form-control" value="0">
+			<div class="input-group-btn-vertical">
+				<button class="btn btn-default" type="button"><i class="fa fa-caret-up"></i></button>
+				<button class="btn btn-default" type="button"><i class="fa fa-caret-down"></i></button>
+			</div>
+		</div>
+	</div>
+
+	<div id="judShiaBlue" class="judogi">
+		<label>JUDOGI SHIAI BLUE</label>
+		<div class="input-group spinner">
+			<input type="text" class="form-control" value="0">
+			<div class="input-group-btn-vertical">
+				<button class="btn btn-default" type="button"><i class="fa fa-caret-up"></i></button>
+				<button class="btn btn-default" type="button"><i class="fa fa-caret-down"></i></button>
+			</div>
+		</div>
+	</div>
+
+	<div id="judYush" class="judogi">
+		<label>JUDOGI YUSHO IJF</label>
+		<div class="input-group spinner">
+			<input type="text" class="form-control" value="0">
+			<div class="input-group-btn-vertical">
+				<button class="btn btn-default" type="button"><i class="fa fa-caret-up"></i></button>
+				<button class="btn btn-default" type="button"><i class="fa fa-caret-down"></i></button>
+			</div>
+		</div>
+	</div>
+
+	<div id="judYushBlue" class="judogi">
+		<label>JUDOGI YUSHO IJF BLUE</label>
+		<div class="input-group spinner">
+			<input type="text" class="form-control" value="0">
+			<div class="input-group-btn-vertical">
+				<button class="btn btn-default" type="button"><i class="fa fa-caret-up"></i></button>
+				<button class="btn btn-default" type="button"><i class="fa fa-caret-down"></i></button>
+			</div>
+		</div>
+	</div>
+
+	<div id="judYushBest" class="judogi">
+		<label>JUDOGI YUSHO IJF BEST</label>
+		<div class="input-group spinner">
+			<input type="text" class="form-control" value="0">
+			<div class="input-group-btn-vertical">
+				<button class="btn btn-default" type="button"><i class="fa fa-caret-up"></i></button>
+				<button class="btn btn-default" type="button"><i class="fa fa-caret-down"></i></button>
+			</div>
+		</div>
+	</div>
+
+	<div id="judYushBestBlue" class="judogi">
+		<label>JUDOGI YUSHO IJF BEST BLUE</label>
+		<div class="input-group spinner">
+			<input type="text" class="form-control" value="0">
+			<div class="input-group-btn-vertical">
+				<button class="btn btn-default" type="button"><i class="fa fa-caret-up"></i></button>
+				<button class="btn btn-default" type="button"><i class="fa fa-caret-down"></i></button>
+			</div>
+		</div>
+	</div>
+
+	<div id="judYushJap" class="judogi">
+		<label>JUDOGI YUSHO IJF JAPAN</label>
+		<div class="input-group spinner">
+			<input type="text" class="form-control" value="0">
+			<div class="input-group-btn-vertical">
+				<button class="btn btn-default" type="button"><i class="fa fa-caret-up"></i></button>
+				<button class="btn btn-default" type="button"><i class="fa fa-caret-down"></i></button>
+			</div>
+		</div>
+	</div>
+
+	<div id="judYushJapBlue" class="judogi">
+		<label>JUDOGI YUSHO IJF JAPAN BLUE</label>
+		<div class="input-group spinner">
+			<input type="text" class="form-control" value="0">
+			<div class="input-group-btn-vertical">
+				<button class="btn btn-default" type="button"><i class="fa fa-caret-up"></i></button>
+				<button class="btn btn-default" type="button"><i class="fa fa-caret-down"></i></button>
+			</div>
+		</div>
+	</div>
+
+	<div id="judYawa" class="judogi">
+		<label>JUDOGI YAWARA</label>
+		<div class="input-group spinner">
+			<input type="text" class="form-control" value="0">
+			<div class="input-group-btn-vertical">
+				<button class="btn btn-default" type="button"><i class="fa fa-caret-up"></i></button>
+				<button class="btn btn-default" type="button"><i class="fa fa-caret-down"></i></button>
+			</div>
+		</div>
+	</div>
+
+	<div id="obiRed" class="obi">
+		<label>OBI RED</label>
+		<div class="input-group spinner">
+			<input type="text" class="form-control" value="0">
+			<div class="input-group-btn-vertical">
+				<button class="btn btn-default" type="button"><i class="fa fa-caret-up"></i></button>
+				<button class="btn btn-default" type="button"><i class="fa fa-caret-down"></i></button>
+			</div>
+		</div>
+	</div>
+
+	<div id="obiYell" class="obi">
+		<label>OBI YELLOW</label>
+		<div class="input-group spinner">
+			<input type="text" class="form-control" value="0">
+			<div class="input-group-btn-vertical">
+				<button class="btn btn-default" type="button"><i class="fa fa-caret-up"></i></button>
+				<button class="btn btn-default" type="button"><i class="fa fa-caret-down"></i></button>
+			</div>
+		</div>
+	</div>
+
+	<div id="obiOran" class="obi">
+		<label>OBI ORANGE</label>
+		<div class="input-group spinner">
+			<input type="text" class="form-control" value="0">
+			<div class="input-group-btn-vertical">
+				<button class="btn btn-default" type="button"><i class="fa fa-caret-up"></i></button>
+				<button class="btn btn-default" type="button"><i class="fa fa-caret-down"></i></button>
+			</div>
+		</div>
+	</div>
+
+	<div id="obiGree" class="obi">
+		<label>OBI GREEN</label>
+		<div class="input-group spinner">
+			<input type="text" class="form-control" value="0">
+			<div class="input-group-btn-vertical">
+				<button class="btn btn-default" type="button"><i class="fa fa-caret-up"></i></button>
+				<button class="btn btn-default" type="button"><i class="fa fa-caret-down"></i></button>
+			</div>
+		</div>
+	</div>
+
+	<div id="obiBlue" class="obi">
+		<label>OBI BLUE</label>
+		<div class="input-group spinner">
+			<input type="text" class="form-control" value="0">
+			<div class="input-group-btn-vertical">
+				<button class="btn btn-default" type="button"><i class="fa fa-caret-up"></i></button>
+				<button class="btn btn-default" type="button"><i class="fa fa-caret-down"></i></button>
+			</div>
+		</div>
+	</div>
+
+	<div id="obiBrow" class="obi">
+		<label>OBI BROWN</label>
+		<div class="input-group spinner">
+			<input type="text" class="form-control" value="0">
+			<div class="input-group-btn-vertical">
+				<button class="btn btn-default" type="button"><i class="fa fa-caret-up"></i></button>
+				<button class="btn btn-default" type="button"><i class="fa fa-caret-down"></i></button>
+			</div>
+		</div>
+	</div>
+
+	<div id="obiBlac" class="obi">
+		<label>OBI BLACK</label>
+		<div class="input-group spinner">
+			<input type="text" class="form-control" value="0">
+			<div class="input-group-btn-vertical">
+				<button class="btn btn-default" type="button"><i class="fa fa-caret-up"></i></button>
+				<button class="btn btn-default" type="button"><i class="fa fa-caret-down"></i></button>
+			</div>
+		</div>
+	</div>
+
+	<div id="obiBlacIjf" class="obi">
+		<label>OBI BLACK IJF</label>
+		<div class="input-group spinner">
+			<input type="text" class="form-control" value="0">
+			<div class="input-group-btn-vertical">
+				<button class="btn btn-default" type="button"><i class="fa fa-caret-up"></i></button>
+				<button class="btn btn-default" type="button"><i class="fa fa-caret-down"></i></button>
+			</div>
+		</div>
+	</div>
+
+	<div id="obiBlacIjfBest" class="obi">
+		<label>OBI BLACK IJF BEST</label>
+		<div class="input-group spinner">
+			<input type="text" class="form-control" value="0">
+			<div class="input-group-btn-vertical">
+				<button class="btn btn-default" type="button"><i class="fa fa-caret-up"></i></button>
+				<button class="btn btn-default" type="button"><i class="fa fa-caret-down"></i></button>
+			</div>
+		</div>
+	</div>
+
+	<div id="obiBlacJap" class="obi">
+		<label>OBI BLACK JAPAN</label>
+		<div class="input-group spinner">
+			<input type="text" class="form-control" value="0">
+			<div class="input-group-btn-vertical">
+				<button class="btn btn-default" type="button"><i class="fa fa-caret-up"></i></button>
+				<button class="btn btn-default" type="button"><i class="fa fa-caret-down"></i></button>
+			</div>
+		</div>
+	</div>
+
+	<div id="obiMast" class="obi">
+		<label>OBI MASTER BELT</label>
+		<div class="input-group spinner">
+			<input type="text" class="form-control" value="0">
+			<div class="input-group-btn-vertical">
+				<button class="btn btn-default" type="button"><i class="fa fa-caret-up"></i></button>
+				<button class="btn btn-default" type="button"><i class="fa fa-caret-down"></i></button>
+			</div>
+		</div>
+	</div>
+
+	<div id="panKodo" class="pants">
+		<label>PANTS KODOMO</label>
+		<div class="input-group spinner">
+			<input type="text" class="form-control" value="0">
+			<div class="input-group-btn-vertical">
+				<button class="btn btn-default" type="button"><i class="fa fa-caret-up"></i></button>
+				<button class="btn btn-default" type="button"><i class="fa fa-caret-down"></i></button>
+			</div>
+		</div>
+	</div>
+
+	<div id="panIjf" class="pants">
+		<label>PANTS IJF</label>
+		<div class="input-group spinner">
+			<input type="text" class="form-control" value="0">
+			<div class="input-group-btn-vertical">
+				<button class="btn btn-default" type="button"><i class="fa fa-caret-up"></i></button>
+				<button class="btn btn-default" type="button"><i class="fa fa-caret-down"></i></button>
+			</div>
+		</div>
+	</div>
+
+	<div id="panIjfBlue" class="pants">
+		<label>PANTS IJF BLUE</label>
+		<div class="input-group spinner">
+			<input type="text" class="form-control" value="0">
+			<div class="input-group-btn-vertical">
+				<button class="btn btn-default" type="button"><i class="fa fa-caret-up"></i></button>
+				<button class="btn btn-default" type="button"><i class="fa fa-caret-down"></i></button>
+			</div>
+		</div>
+	</div>
+
+	<div id="panIjfBest" class="pants">
+		<label>PANTS IJF BEST</label>
+		<div class="input-group spinner">
+			<input type="text" class="form-control" value="0">
+			<div class="input-group-btn-vertical">
+				<button class="btn btn-default" type="button"><i class="fa fa-caret-up"></i></button>
+				<button class="btn btn-default" type="button"><i class="fa fa-caret-down"></i></button>
+			</div>
+		</div>
+	</div>
+
+	<div id="panIjfBestBlue" class="pants">
+		<label>PANTS IJF BEST BLUE</label>
+		<div class="input-group spinner">
+			<input type="text" class="form-control" value="0">
+			<div class="input-group-btn-vertical">
+				<button class="btn btn-default" type="button"><i class="fa fa-caret-up"></i></button>
+				<button class="btn btn-default" type="button"><i class="fa fa-caret-down"></i></button>
+			</div>
+		</div>
+	</div>
+
+	<div id="bagBlaWh" class="bags">
+		<label>SHUNZUI BAG BLACK-WHITE KANJI</label>
+		<div class="input-group spinner">
+			<input type="text" class="form-control" value="0">
+			<div class="input-group-btn-vertical">
+				<button class="btn btn-default" type="button"><i class="fa fa-caret-up"></i></button>
+				<button class="btn btn-default" type="button"><i class="fa fa-caret-down"></i></button>
+			</div>
+		</div>
+	</div>
+
+	<div id="bagBluWh" class="bags">
+		<label>SHUNZUI BAG BLUE-WHITE KANJI</label>
+		<div class="input-group spinner">
+			<input type="text" class="form-control" value="0">
+			<div class="input-group-btn-vertical">
+				<button class="btn btn-default" type="button"><i class="fa fa-caret-up"></i></button>
+				<button class="btn btn-default" type="button"><i class="fa fa-caret-down"></i></button>
+			</div>
+		</div>
+	</div>
+
+	<div id="bagSiBl" class="bags">
+		<label>SHUNZUI BAG SILVER-BLACK LOGO</label>
+		<div class="input-group spinner">
+			<input type="text" class="form-control" value="0">
+			<div class="input-group-btn-vertical">
+				<button class="btn btn-default" type="button"><i class="fa fa-caret-up"></i></button>
+				<button class="btn btn-default" type="button"><i class="fa fa-caret-down"></i></button>
+			</div>
+		</div>
+	</div>
+
+	<div id="bagBluWhLogo" class="bags">
+		<label>SHUNZUI BAG BLUE-WHITE LOGO</label>
+		<div class="input-group spinner">
+			<input type="text" class="form-control" value="0">
+			<div class="input-group-btn-vertical">
+				<button class="btn btn-default" type="button"><i class="fa fa-caret-up"></i></button>
+				<button class="btn btn-default" type="button"><i class="fa fa-caret-down"></i></button>
+			</div>
+		</div>
+	</div>
+
 </div>
 
 		<div class="push"></div>
@@ -46,10 +425,13 @@
 	<div id="footer"></div>
 </div>
 <!--js-->
-<script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+<script src="http://code.jquery.com/jquery-latest.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
 <script src="../resources/bootstrap/js/bootstrap.js" type="text/javascript"></script>
 <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
 <script type="text/javascript" src="../resources/js/mailservice.js"></script >
+
+<script type="text/javascript" src="../resources/js/bootstrap-spinner.js"></script>
+
 </body>
 </html>

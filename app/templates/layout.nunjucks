@@ -23,5 +23,6 @@
 </div>
 {% include "footer.nunjucks" %}
 {% include "js.nunjucks" %}
+{% block extrajs %} {% endblock %}
 </body>
 </html>
