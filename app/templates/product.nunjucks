@@ -1,0 +1,5 @@
+{% macro product(product) %}
+	<div id="{{product.id}}" class="{{ product.category }} col-md-4">
+		<img alt="test" src="../resources/img/{{product.imgSrc}}" class="productImg"/>
+	</div>
+{% endmacro %}

@@ -15,7 +15,7 @@
 			[
 				{"100-160": 18}
 			],
-		"imgSrc": "path",
+		"imgSrc": "webshop/shiro.jpg",
 		"brand":"mizuno"
 	},
 	{
@@ -28,7 +28,7 @@
 				{"100-130": 19},
 				{"140-160": 22}
 			],
-		"imgSrc": "path",
+		"imgSrc": "webshop/hajime.jpg",
 		"brand":"mizuno"
 	},
 	{
@@ -41,7 +41,7 @@
 				{"110-150": 32},
 				{"160-190": 37}
 			],
-		"imgSrc": "path",
+		"imgSrc": "webshop/kodomo.jpg",
 		"brand":"mizuno"
 	},
 	{
@@ -55,7 +55,7 @@
 				{"160-170": 58},
 				{"180-200": 63}
 			],
-		"imgSrc": "path",
+		"imgSrc": "webshop/hayato.jpg",
 		"brand":"mizuno"
 	},
 	{
@@ -69,7 +69,7 @@
 				{"160-170": 75},
 				{"180-200": 79}
 			],
-		"imgSrc": "path",
+		"imgSrc": "webshop/hayato_blue.jpg",
 		"brand":"mizuno"
 	},
 	{
@@ -83,7 +83,7 @@
 				{"155-170": 82},
 				{"175-200": 89}
 			],
-		"imgSrc": "path",
+		"imgSrc": "webshop/keiko.jpg",
 		"brand":"mizuno"
 	},
 	{
@@ -97,7 +97,7 @@
 				{"2.5-4": 165},
 				{"4.5-7": 185}
 			],
-		"imgSrc": "path",
+		"imgSrc": "webshop/shiai.jpg",
 		"brand":"mizuno"
 	},
 	{
@@ -111,7 +111,7 @@
 				{"2.5-4.5": 190},
 				{"5-7": 199}
 			],
-		"imgSrc": "path",
+		"imgSrc": "webshop/shiai_blue.jpg",
 		"brand":"mizuno"
 	},
 	{
@@ -125,7 +125,7 @@
 				{"2.5-4.5": 155},
 				{"5-7": 169}
 			],
-		"imgSrc": "path",
+		"imgSrc": "webshop/yusho_ijf.jpg",
 		"brand":"mizuno"
 	},
 	{
@@ -139,7 +139,7 @@
 				{"2.5-4": 185},
 				{"4.5-7": 199}
 			],
-		"imgSrc": "path",
+		"imgSrc": "webshop/yusho_ijf_blue.jpg",
 		"brand":"mizuno"
 	},
 	{
@@ -153,7 +153,7 @@
 				{"2.5-4.5": 185},
 				{"5-7": 209}
 			],
-		"imgSrc": "path",
+		"imgSrc": "webshop/yusho_ijf_best.jpg",
 		"brand":"mizuno"
 	},
 	{
@@ -167,7 +167,7 @@
 				{"2.5-4.5": 209},
 				{"5-7": 235}
 			],
-		"imgSrc": "path",
+		"imgSrc": "webshop/yusho_ijf_best_blue.jpg",
 		"brand":"mizuno"
 	},
 	{
@@ -182,7 +182,7 @@
 				{"5-5.5": 329},
 				{"6-7": 349}
 			],
-		"imgSrc": "path",
+		"imgSrc": "webshop/yusho_ijf_japan.jpg",
 		"brand":"mizuno"
 	},
 	{
@@ -197,7 +197,7 @@
 				{"4.5-5.5": 365},
 				{"6-7": 395}
 			],
-		"imgSrc": "path",
+		"imgSrc": "webshop/yusho_ijf_japan_blue.jpg",
 		"brand":"mizuno"
 	},
 	{
@@ -212,7 +212,7 @@
 				{"4.5-5.5": 375},
 				{"6-7": 399}
 			],
-		"imgSrc": "path",
+		"imgSrc": "webshop/yawara.jpg",
 		"brand":"mizuno"
 	},
 	{

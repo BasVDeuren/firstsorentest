@@ -1,5 +1,13 @@
+html, body{
+height: 100%
+}
+
 #body a, h1, p, h2 , label{
 	color: white !important;
+}
+
+.fill {
+	height: 100%
 }
 
 #title {
@@ -8,31 +16,30 @@
 }
 
 .color-left-right {
-	min-height:100%;
 	background: linear-gradient(to right, #803536 0%, #6a0f11 100%);
 }
 
 .color-right-left {
-	min-height:100%;
 	background: linear-gradient(to left, #803536 0%, #6a0f11 100%);
 }
 
 #id-container {
 	background-color: #6a0f11;
-	min-height: 100%;
     height: auto !important;
 }
 .background-image {
 	background-image: url("../img/sorenaction1.png");
 	background-repeat: no-repeat;
 	background-size:contain;
-	height: 100%;
 }
 .background-image-2 {
 	background-image: url("../img/sorenaction2.png");
 	background-repeat: no-repeat;
 	background-size:contain;
-	height: 100%;
+}
+.container-fluid {
+	padding: 0px;
+	overflow: hidden;
 }
 
 /* Navigation */
@@ -67,19 +74,27 @@
 	position: relative;
 }
 
-html, body {
-    height: 100%;
-}
-.wrapper {
-    min-height: 100%;
-    height: 100%;
-    margin: 0 auto -155px; /* the bottom margin is the negative value of the footer's height */
-}
 .footer, .push {
     height: 155px; /* .push must be the same height as .footer */
 }
 
 /* WEBSHOP */
+.productImg {
+	width: 150px;
+}
+
+/*TABLE*/
+.row {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display:         flex;
+  flex-wrap: wrap;
+}
+.row > [class*='col-'] {
+  display: flex;
+  flex-direction: column;
+}
 
 /* BOOTSTRAP SPINNER */
 .spinner {
