@@ -1,5 +1,6 @@
 var gulp = require('gulp');
 var nunjucksRender = require('gulp-nunjucks-render');
+var connect = require('gulp-connect');
 
 gulp.task('nunjucks', function() {
   // Gets .nunjucks files in app
@@ -12,6 +13,15 @@ gulp.task('nunjucks', function() {
   .pipe(gulp.dest('app/dist'))
 });
 
-gulp.task('default', function(){
+gulp.task('webserver', function(){
+	connect.server({
+		livereload: true,
+		port: 1234,
+	});
+});
+
+gulp.task('watch', function(){
 	gulp.watch('app/**/*.nunjucks', ['nunjucks']);
 });
+
+gulp.task('default', ['nunjucks','webserver', 'watch']);

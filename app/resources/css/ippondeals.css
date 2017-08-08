@@ -23,6 +23,10 @@ height: 100%
 	background: linear-gradient(to left, #803536 0%, #6a0f11 100%);
 }
 
+.container-flex {
+	display: flex;
+}
+
 #id-container {
 	background-color: #6a0f11;
     height: auto !important;
@@ -50,20 +54,16 @@ height: 100%
 
 #navigation-bar li.active {
 	background: rgba(81, 11, 11, 0.98);
-	color: black;
 }
 #navigation-bar li.active a {
 	background: rgba(81, 11, 11, 0.98);
-	color: black;
 }
 
 #navigation-bar li :hover{
 	background: rgba(81, 11, 11, 0.98);
-	color: black;
 }
 #navigation-bar li a :hover{
 	background: rgba(81, 11, 11, 0.98);
-	color: black;
 }
 
 /* FOOTER */
@@ -81,19 +81,6 @@ height: 100%
 /* WEBSHOP */
 .productImg {
 	width: 150px;
-}
-
-/*TABLE*/
-.row {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display:         flex;
-  flex-wrap: wrap;
-}
-.row > [class*='col-'] {
-  display: flex;
-  flex-direction: column;
 }
 
 /* BOOTSTRAP SPINNER */
@@ -131,4 +118,24 @@ height: 100%
   position: absolute;
   top: 0;
   left: 4px;
+}
+
+/* FLEX full height */
+.fill-height-or-more {
+	display: flex;
+	min-height: 100vh;
+}
+
+.fill-height-or-more > div {
+  /* these are the flex items */
+  flex: 1;
+}
+
+.fill-height-or-more > div#id-container {
+  /* these are the flex items */
+  flex: 6;
+}
+
+#wrapper {
+	min-height: 100vh;
 }

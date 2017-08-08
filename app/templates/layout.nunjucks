@@ -5,22 +5,22 @@
 
 {% include "head.nunjucks" %}	 
 </head>
-<body id="body">
-<div class="container-fluid fill">
-	<div class="row fill">
-	<div class="color-left-right col-lg-2 col-md-1 hidden-xs hidden-sm"></div>
-	{% if webshop %}
-	<div id="id-container" class="col-lg-8 col-md-10 background-image-2">
-	{% else %}
-	<div id="id-container" class="col-lg-8 col-md-10 background-image">
-	{% endif %}
-		<h1 id="title" class="text-center">Ippon deals</h1>
-		{% block title %} {% endblock%}
+<body>
+<div id="wrapper">
+	<div class="row fill-height-or-more">
+		<div class="color-left-right hidden-xs hidden-sm"></div>
+		{% if webshop %}
+		<div id="id-container" class="background-image-2">
+		{% else %}
+		<div id="id-container" class="background-image">
+		{% endif %}
+		  <h1 id="title" class="text-center">Ippon deals</h1>
+		  {% block title %} {% endblock%}
 			{% include "navigation.nunjucks" %}
-		{% block content%} {% endblock%}
-		{% include "footer.nunjucks" %}
-	</div>
-	<div class="color-right-left col-lg-2 col-md-1 hidden-xs hidden-sm"></div>
+		  {% block content%} {% endblock%}
+		  {% include "footer.nunjucks" %}
+		</div>
+		<div class="color-right-left hidden-xs hidden-sm"></div>
 	</div>
 </div>
 {% include "js.nunjucks" %}
