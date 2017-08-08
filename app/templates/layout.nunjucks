@@ -5,7 +5,7 @@
 
 {% include "head.nunjucks" %}	 
 </head>
-<body>
+<body id="body">
 <div id="wrapper">
 	<div class="row fill-height-or-more">
 		<div class="color-left-right hidden-xs hidden-sm"></div>

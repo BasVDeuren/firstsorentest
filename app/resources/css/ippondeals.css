@@ -79,6 +79,16 @@ height: 100%
 }
 
 /* WEBSHOP */
+#shopForm {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+.webshopProduct {
+	flex-basis: 30%
+}
+
 .productImg {
 	width: 150px;
 }
