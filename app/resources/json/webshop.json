@@ -6,7 +6,10 @@
 		"niveau": "Type 1 Initiatie",
 		"pricePerSize":
 			[
-				{"100-160": 18}
+				{
+					"sizes": "100-160",
+					"price": 18
+				}
 			],
 		"imgSrc": "webshop/shiro.jpg",
 		"brand":"mizuno"
@@ -18,8 +21,14 @@
 		"niveau": "Type 2 Beginner",
 		"pricePerSize":
 			[
-				{"100-130": 19},
-				{"140-160": 22}
+				{
+					"sizes": "100-130",
+					"price": 19
+				},
+				{
+					"sizes": "140-160",
+					"price": 22
+				}
 			],
 		"imgSrc": "webshop/hajime.jpg",
 		"brand":"mizuno"
@@ -31,8 +40,14 @@
 		"niveau": "Type 3 Recreatief",
 		"pricePerSize":
 			[
-				{"110-150": 32},
-				{"160-190": 37}
+				{
+				"sizes": "110-150",
+				"price": 32
+				},
+				{
+				"sizes": "160-190",
+				"price": 37
+				}
 			],
 		"imgSrc": "webshop/kodomo.jpg",
 		"brand":"mizuno"
@@ -44,9 +59,18 @@
 		"niveau": "Type 4 Gevorderd",
 		"pricePerSize":
 			[
-				{"110-150": 49},
-				{"160-170": 58},
-				{"180-200": 63}
+				{
+				"sizes": "110-150",
+				"price": 49
+				},
+				{
+				"sizes": "160-170",
+				"price": 58
+				},
+				{
+				"sizes": "180-200",
+				"price": 63
+				}
 			],
 		"imgSrc": "webshop/hayato.jpg",
 		"brand":"mizuno"
@@ -58,9 +82,18 @@
 		"niveau": "Type 4 Gevorderd",
 		"pricePerSize":
 			[
-				{"130-150": 65},
-				{"160-170": 75},
-				{"180-200": 79}
+				{
+				"sizes": "130-150",
+				"price": 65
+				},
+				{
+				"sizes": "160-170", 
+				"price": 75
+				},
+				{
+				"sizes": "180-200",
+				"price": 79
+				}
 			],
 		"imgSrc": "webshop/hayato_blue.jpg",
 		"brand":"mizuno"
@@ -72,9 +105,18 @@
 		"niveau": "Type 5 Laag competitief",
 		"pricePerSize":
 			[
-				{"140-150": 75},
-				{"155-170": 82},
-				{"175-200": 89}
+				{
+				"sizes": "140-150" ,
+				"price": 75
+				},
+				{
+				"sizes": "155-170",
+				"price": 82
+				},
+				{
+				"sizes": "175-200",
+				"price": 89
+				}
 			],
 		"imgSrc": "webshop/keiko.jpg",
 		"brand":"mizuno"
@@ -86,9 +128,18 @@
 		"niveau": "Type 6 Competitief",
 		"pricePerSize":
 			[
-				{"1-2": 145},
-				{"2.5-4": 165},
-				{"4.5-7": 185}
+				{
+				"sizes": "1-2", 
+				"price": 145
+				},
+				{
+				"sizes": "2.5-4", 
+				"price": 165
+				},
+				{
+				"sizes": "4.5-7", 
+				"price": 185
+				}
 			],
 		"imgSrc": "webshop/shiai.jpg",
 		"brand":"mizuno"
@@ -100,9 +151,18 @@
 		"niveau": "Type 6 Competitief",
 		"pricePerSize":
 			[
-				{"1-2": 175},
-				{"2.5-4.5": 190},
-				{"5-7": 199}
+				{
+				"sizes": "1-2", 
+				"price": 175
+				},
+				{
+				"sizes": "2.5-4.5", 
+				"price": 190
+				},
+				{
+				"sizes": "5-7", 
+				"price": 199
+				}
 			],
 		"imgSrc": "webshop/shiai_blue.jpg",
 		"brand":"mizuno"
@@ -114,9 +174,18 @@
 		"niveau": "Type 7 Hoog competitief",
 		"pricePerSize":
 			[
-				{"0-2": 135},
-				{"2.5-4.5": 155},
-				{"5-7": 169}
+				{
+				"sizes": "0-2", 
+				"price": 135
+				},
+				{
+				"sizes": "2.5-4.5", 
+				"price": 155
+				},
+				{
+				"sizes": "5-7", 
+				"price": 169
+				}
 			],
 		"imgSrc": "webshop/yusho_ijf.jpg",
 		"brand":"mizuno"
@@ -128,9 +197,18 @@
 		"niveau": "Type 7 Hoog competitief",
 		"pricePerSize":
 			[
-				{"0-2": 165},
-				{"2.5-4": 185},
-				{"4.5-7": 199}
+				{
+				"sizes": "0-2", 
+				"price": 165
+				},
+				{
+				"sizes": "2.5-4", 
+				"price": 185
+				},
+				{
+				"sizes": "4.5-7", 
+				"price": 199
+				}
 			],
 		"imgSrc": "webshop/yusho_ijf_blue.jpg",
 		"brand":"mizuno"
@@ -142,9 +220,9 @@
 		"niveau": "Type 8 Hoog competitief",
 		"pricePerSize":
 			[
-				{"0-2": 165},
-				{"2.5-4.5": 185},
-				{"5-7": 209}
+				{"sizes": "0-2", "price": 165},
+				{"sizes": "2.5-4.5", "price": 185},
+				{"sizes": "5-7", "price": 209}
 			],
 		"imgSrc": "webshop/yusho_ijf_best.jpg",
 		"brand":"mizuno"
@@ -156,9 +234,9 @@
 		"niveau": "Type 8 Hoog competitief",
 		"pricePerSize":
 			[
-				{"0-2": 189},
-				{"2.5-4.5": 209},
-				{"5-7": 235}
+				{"sizes": "0-2", "price": 189},
+				{"sizes": "2.5-4.5", "price": 209},
+				{"sizes": "5-7", "price": 235}
 			],
 		"imgSrc": "webshop/yusho_ijf_best_blue.jpg",
 		"brand":"mizuno"
@@ -170,10 +248,10 @@
 		"niveau": "Type 9 Hoog competitief",
 		"pricePerSize":
 			[
-				{"1-2": 299},
-				{"2.5-4.5": 309},
-				{"5-5.5": 329},
-				{"6-7": 349}
+				{"sizes": "1-2", "price": 299},
+				{"sizes": "2.5-4.5", "price": 309},
+				{"sizes": "5-5.5", "price": 329},
+				{"sizes": "6-7", "price": 349}
 			],
 		"imgSrc": "webshop/yusho_ijf_japan.jpg",
 		"brand":"mizuno"
@@ -185,10 +263,10 @@
 		"niveau": "Type 9 Hoog competitief",
 		"pricePerSize":
 			[
-				{"1-2": 330},
-				{"2.5-4": 349},
-				{"4.5-5.5": 365},
-				{"6-7": 395}
+				{"sizes": "1-2", "price": 330},
+				{"sizes": "2.5-4", "price": 349},
+				{"sizes": "4.5-5.5", "price": 365},
+				{"sizes": "6-7", "price": 395}
 			],
 		"imgSrc": "webshop/yusho_ijf_japan_blue.jpg",
 		"brand":"mizuno"
@@ -200,10 +278,10 @@
 		"niveau": "Type 10 Expert sensei",
 		"pricePerSize":
 			[
-				{"1-2": 349},
-				{"2.5-4": 355},
-				{"4.5-5.5": 375},
-				{"6-7": 399}
+				{"sizes": "1-2", "price": 349},
+				{"sizes": "2.5-4", "price": 355},
+				{"sizes": "4.5-5.5", "price": 375},
+				{"sizes": "6-7", "price": 399}
 			],
 		"imgSrc": "webshop/yawara.jpg",
 		"brand":"mizuno"
@@ -214,7 +292,9 @@
 		"category": "obi",
 		"pricePerSize":
 			[
-				{"180/230": 13}
+				{
+				"sizes": "180/230", "price": 13
+				}
 			],
 		"imgSrc": "path",
 		"brand":"mizuno"
@@ -225,7 +305,7 @@
 		"category": "obi",
 		"pricePerSize":
 			[
-				{"00-4": 13}
+				{"sizes": "00-4", "price": 13}
 			],
 		"imgSrc": "path",
 		"brand":"mizuno"
@@ -236,7 +316,7 @@
 		"category": "obi",
 		"pricePerSize":
 			[
-				{"00-4": 13}
+				{"sizes": "00-4", "price": 13}
 			],
 		"imgSrc": "path",
 		"brand":"mizuno"
@@ -247,7 +327,7 @@
 		"category": "obi",
 		"pricePerSize":
 			[
-				{"2-6.5": 13}
+				{"sizes": "2-6.5", "price": 13}
 			],
 		"imgSrc": "path",
 		"brand":"mizuno"
@@ -258,7 +338,7 @@
 		"category": "obi",
 		"pricePerSize":
 			[
-				{"2-6.5": 13}
+				{"sizes": "2-6.5", "price": 13}
 			],
 		"imgSrc": "path",
 		"brand":"mizuno"
@@ -269,7 +349,7 @@
 		"category": "obi",
 		"pricePerSize":
 			[
-				{"2-7": 13}
+				{"sizes": "2-7", "price": 13}
 			],
 		"imgSrc": "path",
 		"brand":"mizuno"
@@ -280,7 +360,7 @@
 		"category": "obi",
 		"pricePerSize":
 			[
-				{"1-8": 19}
+				{"sizes": "1-8", "price": 19}
 			],
 		"imgSrc": "path",
 		"brand":"mizuno"
@@ -291,7 +371,7 @@
 		"category": "obi",
 		"pricePerSize":
 			[
-				{"1-8": 25}
+				{"sizes": "1-8", "price": 25}
 			],
 		"imgSrc": "path",
 		"brand":"mizuno"
@@ -302,7 +382,7 @@
 		"category": "obi",
 		"pricePerSize":
 			[
-				{"2-8": 45}
+				{"sizes": "2-8", "price": 45}
 			],
 		"imgSrc": "path",
 		"brand":"mizuno"
@@ -313,7 +393,7 @@
 		"category": "obi",
 		"pricePerSize":
 			[
-				{"2-8": 49}
+				{"sizes": "2-8", "price": 49}
 			],
 		"imgSrc": "path",
 		"brand":"mizuno"
@@ -324,7 +404,7 @@
 		"category": "obi",
 		"pricePerSize":
 			[
-				{"2-8": 65}
+				{"sizes": "2-8", "price": 65}
 			],
 		"imgSrc": "path",
 		"brand":"mizuno"
@@ -335,8 +415,8 @@
 		"category": "pants",
 		"pricePerSize":
 			[
-				{"110-140": 15},
-				{"150-190": 19}
+				{"sizes": "110-140", "price": 15},
+				{"sizes": "150-190", "price": 19}
 			],
 		"imgSrc": "path",
 		"brand":"mizuno"
@@ -347,7 +427,7 @@
 		"category": "pants",
 		"pricePerSize":
 			[
-				{"1-7": 35}
+				{"sizes": "1-7", "price": 35}
 			],
 		"imgSrc": "path",
 		"brand":"mizuno"
@@ -358,7 +438,7 @@
 		"category": "pants",
 		"pricePerSize":
 			[
-				{"1-7": 39}
+				{"sizes": "1-7", "price": 39}
 			],
 		"imgSrc": "path",
 		"brand":"mizuno"
@@ -369,7 +449,7 @@
 		"category": "pants",
 		"pricePerSize":
 			[
-				{"1-7": 55}
+				{"sizes": "1-7", "price": 55}
 			],
 		"imgSrc": "path",
 		"brand":"mizuno"
@@ -380,7 +460,7 @@
 		"category": "pants",
 		"pricePerSize":
 			[
-				{"1-7": 59}
+				{"sizes": "1-7", "price": 59}
 			],
 		"imgSrc": "path",
 		"brand":"mizuno"
@@ -391,8 +471,8 @@
 		"category": "bags",
 		"pricePerSize":
 			[
-				{"small": 39},
-				{"medium": 49}
+				{"sizes": "small", "price": 39},
+				{"sizes": "medium", "price": 49}
 			],
 		"imgSrc": "path",
 		"brand":"mizuno"
@@ -403,8 +483,8 @@
 		"category": "bags",
 		"pricePerSize":
 			[
-				{"small": 39},
-				{"medium": 49}
+				{"sizes": "small", "price": 39},
+				{"sizes": "medium", "price": 49}
 			],
 		"imgSrc": "path",
 		"brand":"mizuno"
@@ -415,8 +495,8 @@
 		"category": "bags",
 		"pricePerSize":
 			[
-				{"small": 39},
-				{"medium": 49}
+				{"sizes": "small", "price": 39},
+				{"sizes": "medium", "price": 49}
 			],
 		"imgSrc": "path",
 		"brand":"mizuno"
@@ -427,8 +507,8 @@
 		"category": "bags",
 		"pricePerSize":
 			[
-				{"small": 39},
-				{"medium": 49}
+				{"sizes": "small", "price": 39},
+				{"sizes": "medium", "price": 49}
 			],
 		"imgSrc": "path",
 		"brand":"mizuno"

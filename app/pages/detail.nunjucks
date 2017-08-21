@@ -1,1 +1,20 @@
 {% extends "layout.nunjucks" %}
+{% set webshop = true %}
+
+{% block extrajs %}
+<script type="text/javascript" src="../resources/js/detailservice.js"></script>
+{% endblock %}
+
+{% block content %}
+	<div class="row">
+		<div id="detailImage" class="col-md-2">
+			<img alt="detail image"/>
+		</div>
+		<div id="detailInfo">
+			<p>Naam: <span id="name"></span></p>
+			<p>Niveau: <span id="niveau"></span></p>
+			<p>Merk: <span id="brand"></span></p>
+			<div id="pricePerSize"></div>
+		</div>
+	</div>
+{% endblock %}

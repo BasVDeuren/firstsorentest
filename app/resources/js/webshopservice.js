@@ -1,4 +1,6 @@
 function setChosenProductToCookie(e){
+	setCookie("chosenProduct",$(e.currentTarget).closest("div").attr("id"),10);
+	window.location.href = './detail.html';
 	e.preventDefault();
 }
 
@@ -20,7 +22,7 @@ $(document).ready(function(){
 		$("#shopForm").append(createProduct(index, val));
 	  });
 	}).fail(function() {
-    console.log( "An error occurred during fetching webshop data, please try again later." );
-	//ToDo, popup a screen to contact the Sören.
-  });
+		console.log( "An error occurred during fetching webshop data, please try again later." );
+		//ToDo, popup a screen to contact Sören.
+	});
 });

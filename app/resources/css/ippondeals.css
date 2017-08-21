@@ -2,7 +2,7 @@ html, body{
 height: 100%
 }
 
-#body a, h1, p, h2 , label{
+#body a, h1, p, h2 , label, span{
 	color: white !important;
 }
 
@@ -92,6 +92,11 @@ height: 100%
 .productImg {
 	width: 150px;
 }
+/*detailwebshop*/
+#detailImage  img{
+	width: 100%;
+}
+
 
 /* BOOTSTRAP SPINNER */
 .spinner {

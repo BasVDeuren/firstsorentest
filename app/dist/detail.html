@@ -15,7 +15,7 @@
 	<div class="row fill-height-or-more">
 		<div class="color-left-right hidden-xs hidden-sm"></div>
 		
-		<div id="id-container" class="background-image">
+		<div id="id-container" class="background-image-2">
 		
 		  <h1 id="title" class="text-center">Ippon deals</h1>
 		   
@@ -23,12 +23,24 @@
   <div class="container-fluid" id="navigation-bar">
     <ul class="nav navbar-nav">
       <li id="home" ><a href="index.html">Home</a></li>
-      <li id="webshop" ><a href="webshop.html">Webshop</a></li>
+      <li id="webshop"  class="active" ><a href="webshop.html">Webshop</a></li>
       <li id="contact" ><a href="#">Contact</a></li>
     </ul>
   </div>
 </nav>
-		   
+		  
+	<div class="row">
+		<div id="detailImage" class="col-md-2">
+			<img alt="detail image"/>
+		</div>
+		<div id="detailInfo">
+			<p>Naam: <span id="name"></span></p>
+			<p>Niveau: <span id="niveau"></span></p>
+			<p>Merk: <span id="brand"></span></p>
+			<div id="pricePerSize"></div>
+		</div>
+	</div>
+
 		  <div class="col-md-offset-2 col-md-8">
 	<div id="footer"></div>
 </div>
@@ -42,6 +54,9 @@
 <script src="../resources/bootstrap/js/bootstrap.js" type="text/javascript"></script>
 <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
 <script type="text/javascript" src="../resources/js/mailservice.js"></script >
- 
+<script type="text/javascript" src="../resources/js/cookieservice.js"></script >
+
+<script type="text/javascript" src="../resources/js/detailservice.js"></script>
+
 </body>
 </html>
