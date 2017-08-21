@@ -21,12 +21,13 @@ $(document).ready(function(){
 			}
 			for(var i = startSize; i < endSize; i += step){
 				if(i != 0.5){
-					var price = $("<span>").html(priceAndSize.price);
-					var size = $("<span>").html(i);
-					var paragraph = $("<p>");
+					var price = $("<span>", {"class":"col-xs-2"}).html("\u20AC" + priceAndSize.price);
+					var size = $("<span>", {"class":"col-xs-1"}).html(i + ": ");
+					var input = $("<input>", {id:""+cookieProduct.id + "%" + i, "type": "text", "class":"col-xs-2", "value": "0"})
+					var paragraph = $("<p>", {"class": "row"});
 					paragraph.append(size);
-					paragraph.append(": \u20AC");
 					paragraph.append(price);
+					paragraph.append(input);
 					$("#detailInfo #pricePerSize").append(paragraph);
 				}
 			}
@@ -38,5 +39,13 @@ $(document).ready(function(){
 	}).fail(function() {
 		console.log( "An error occurred during fetching webshop data, please try again later." );
 		//ToDo, popup a screen to contact Sören.
+	});
+	
+	$("#backButton").click(function(){
+		window.location.href = './webshop.html';
+	});
+	
+	$("#orderButton").click(function(){
+		alert("Uw bestelling werd in acht genomen");
 	});
 });
