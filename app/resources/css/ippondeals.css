@@ -6,6 +6,10 @@ height: 100%
 	color: white !important;
 }
 
+#body input {
+	color: black;
+}
+
 .fill {
 	height: 100%
 }
