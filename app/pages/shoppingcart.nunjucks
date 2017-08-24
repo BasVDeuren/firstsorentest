@@ -1,0 +1,11 @@
+{% extends "layout.nunjucks" %}
+{% set shoppingCart = true %}
+
+{% block extrajs %} 
+	<script type="text/javascript" src="../resources/js/shoppingcart.js"></script>
+{% endblock %}
+
+{% block content %}
+	<div id="cartView">
+	</div>
+{% endblock %}

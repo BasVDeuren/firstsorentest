@@ -3,6 +3,7 @@
 
 {% block extrajs %}
 <script type="text/javascript" src="../resources/js/detailservice.js"></script>
+<script type="text/javascript" src="../resources/js/shoppingcart.js"></script>
 {% endblock %}
 
 {% block content %}

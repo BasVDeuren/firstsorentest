@@ -3,7 +3,7 @@
     <ul class="nav navbar-nav">
       <li id="home" {% if homepage %} class="active" {% endif %}><a href="index.html">Home</a></li>
       <li id="webshop" {% if webshop %} class="active" {% endif %}><a href="webshop.html">Webshop</a></li>
-      <li id="contact" {% if contact %} class="active" {% endif %}><a href="#">Contact</a></li>
+      <li id="shoppingCart" {% if shoppingCart %} class="active" {% endif %}><a href="shoppingcart.html">Winkelwagen</a></li>
     </ul>
   </div>
 </nav>
