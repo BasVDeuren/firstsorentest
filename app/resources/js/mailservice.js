@@ -19,7 +19,7 @@ $(document).ready(function(){
 		$(accurateOrders).each(function(i, order){
 			var li = $("<li>", {id: order.id}).html("Naam: " + order.name + ", prijs: " + order.price + ", aantal: " + order.amount);
 			ul.append(li);
-			total = parseInt(order.amount) * parseInt(order.price);
+			total = total + (parseInt(order.amount) * parseInt(order.price));
 		});
 		orders.append(ul);
 		var totalP = $("<p>", {}).html("Totaal: " + total);
