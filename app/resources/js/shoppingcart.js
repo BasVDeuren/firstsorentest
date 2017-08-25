@@ -1,7 +1,7 @@
 var addToCart = function(id, size, amount){
-	var cartJSON = sessionStorage.getItem( "cart" );
+	var cartJSON = getCookie( "cart" );
 	var cart;
-	if(cartJSON === undefined || cartJSON === null){
+	if(cartJSON === undefined || cartJSON === null || cartJSON == ""){
 		cart = [];
 	} else {
 		cart = JSON.parse(cartJSON);
@@ -13,12 +13,12 @@ var addToCart = function(id, size, amount){
 	};
 	cart.push(item);
 	var jsonCart = JSON.stringify( cart );
-	sessionStorage.setItem( "cart", jsonCart );
+	setCookie("cart", jsonCart, 20);
 }
 
 var removeFromCart = function(id, size){
-	var cartJSON = sessionStorage.getItem( "cart");
-	if(cartJSON !== null && cartJSON !== undefined){
+	var cartJSON = getCookie("cart");
+	if(cartJSON !== null && cartJSON !== undefined && cartJSON !== ""){
 		var cart = JSON.parse(cartJSON);
 		var i = -1;
 		$(cart).each(function(index, item){
@@ -30,7 +30,7 @@ var removeFromCart = function(id, size){
 			cart.splice(i, 1);
 		}
 		var jsonCart = JSON.stringify(cart);
-		sessionStorage.setItem( "cart", jsonCart);
+		setCookie( "cart", jsonCart, 20);
 	}
 }
 
@@ -43,8 +43,8 @@ var removeElement = function(element){
 $(document).ready(function(){
 	var shoppingCartDiv = $("#cartView");
 	
-	var cartJSON = sessionStorage.getItem("cart");
-	if(cartJSON !== null && cartJSON !== undefined){
+	var cartJSON = getCookie("cart");
+	if(cartJSON !== null && cartJSON !== undefined && cartJSON !== ""){
 		var cart = JSON.parse(cartJSON);
 		$(cart).each(function(i, item){
 			var div = $("<div>");
@@ -55,4 +55,8 @@ $(document).ready(function(){
 			shoppingCartDiv.append(div);
 		});
 	}
+	
+	$("#proceed").click(function(){
+		window.location.href="confirmation.html";
+	});
 });

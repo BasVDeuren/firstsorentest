@@ -1,0 +1,16 @@
+{% extends "layout.nunjucks" %}
+
+{% block extrajs %}
+	<script type="text/javascript" src="../resources/js/mailservice.js"></script>
+{% endblock %}
+
+{% block content %}
+	<div id="contactInfo">
+		<p><span id="lastNameLabel">Naam: </span> <input type="text" id="name"/></p>
+		<p><span id="firstNameLabel">Voornaam: </span> <input type="text" id="name"/></p>
+		<p><span id="emailLabel">email adres: </span> <input type="text" id="emailAddress"/></p>
+	</div>
+	<div id="buttons">
+		<button id="sendMailButton">Stuur 'factuur'</button>
+	</div>
+{% endblock %}

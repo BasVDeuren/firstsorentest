@@ -8,4 +8,9 @@
 {% block content %}
 	<div id="cartView">
 	</div>
+	
+	<div id="buttons">
+		<button id="goShopping">Verder winkelen</button>
+		<button id="proceed">Verder</button>
+	</div>
 {% endblock %}
