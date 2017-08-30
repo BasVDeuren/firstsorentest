@@ -14,7 +14,7 @@
 		{% else %}
 		<div id="id-container" class="background-image">
 		{% endif %}
-		  <h1 id="title" class="text-center">Ippon deals</h1>
+		  <h1 id="title" class="text-center">Ippon deals (Under Construction)</h1>
 		  {% block title %} {% endblock%}
 			{% include "navigation.nunjucks" %}
 		  {% block content%} {% endblock%}
