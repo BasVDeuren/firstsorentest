@@ -50,6 +50,11 @@ height: 100%
 	overflow: hidden;
 }
 
+.contentBox {
+	height: 75%;
+	margin-left: 15px;
+}
+
 /* Navigation */
 #navigation-bar {
 	padding-left: 42%;
@@ -75,9 +80,7 @@ height: 100%
 	border-top-color: white;
 	border-top-style: solid;
 	border-top-width: 1px;
-	position: absolute;
-    bottom: 0;
-    left: 0;
+	margin-top: 10px;
 }
 
 .left {

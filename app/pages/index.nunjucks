@@ -2,8 +2,8 @@
 {% set homepage = true %}
 
 {% block content %}
-<div class="row">
-	<h2 class="col-md-offset-2 col-md-8">
+<div class="row contentBox">
+	<h2>
 		<p>Welkom op Ippondeals.be, jouw portaal om kimono's, gordels en meer te kopen!</p>
 	</h2>
 </div>
