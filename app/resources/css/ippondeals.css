@@ -75,11 +75,17 @@ height: 100%
 	border-top-color: white;
 	border-top-style: solid;
 	border-top-width: 1px;
-	position: relative;
+	position: absolute;
+    bottom: 0;
+    left: 0;
 }
 
-.footer, .push {
-    height: 155px; /* .push must be the same height as .footer */
+.left {
+	float: left;
+}
+
+.right {
+	float: right;
 }
 
 /* WEBSHOP */
