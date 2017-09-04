@@ -296,7 +296,7 @@
 				"sizes": "180/230", "price": 13
 				}
 			],
-		"imgSrc": "path",
+		"imgSrc": "webshop/belts/obiRed.jpg",
 		"brand":"mizuno"
 	},
 	{
@@ -307,7 +307,7 @@
 			[
 				{"sizes": "00-4", "price": 13}
 			],
-		"imgSrc": "path",
+		"imgSrc": "webshop/belts/obiYellow.jpg",
 		"brand":"mizuno"
 	},
 	{
@@ -318,7 +318,7 @@
 			[
 				{"sizes": "00-4", "price": 13}
 			],
-		"imgSrc": "path",
+		"imgSrc": "webshop/belts/obiOrange.jpg",
 		"brand":"mizuno"
 	},
 	{
@@ -329,7 +329,7 @@
 			[
 				{"sizes": "2-6.5", "price": 13}
 			],
-		"imgSrc": "path",
+		"imgSrc": "webshop/belts/obiGreen.jpg",
 		"brand":"mizuno"
 	},
 	{
@@ -340,7 +340,7 @@
 			[
 				{"sizes": "2-6.5", "price": 13}
 			],
-		"imgSrc": "path",
+		"imgSrc": "webshop/belts/obiBlue.jpg",
 		"brand":"mizuno"
 	},
 	{
@@ -351,7 +351,7 @@
 			[
 				{"sizes": "2-7", "price": 13}
 			],
-		"imgSrc": "path",
+		"imgSrc": "webshop/belts/obiBrown.jpg",
 		"brand":"mizuno"
 	},
 	{
@@ -362,7 +362,7 @@
 			[
 				{"sizes": "1-8", "price": 19}
 			],
-		"imgSrc": "path",
+		"imgSrc": "webshop/belts/obiBlack.jpg",
 		"brand":"mizuno"
 	},
 	{
@@ -373,7 +373,7 @@
 			[
 				{"sizes": "1-8", "price": 25}
 			],
-		"imgSrc": "path",
+		"imgSrc": "webshop/belts/obiBlackIjf.jpg",
 		"brand":"mizuno"
 	},
 	{
@@ -384,7 +384,7 @@
 			[
 				{"sizes": "2-8", "price": 45}
 			],
-		"imgSrc": "path",
+		"imgSrc": "webshop/belts/obiBlackIjfBest.jpg",
 		"brand":"mizuno"
 	},
 	{
@@ -395,7 +395,7 @@
 			[
 				{"sizes": "2-8", "price": 49}
 			],
-		"imgSrc": "path",
+		"imgSrc": "webshop/belts/obiBlackJapan.jpg",
 		"brand":"mizuno"
 	},
 	{
@@ -406,63 +406,7 @@
 			[
 				{"sizes": "2-8", "price": 65}
 			],
-		"imgSrc": "path",
-		"brand":"mizuno"
-	},
-	{
-		"id": "panKodo",
-		"name": "PANTS KODOMO",
-		"category": "pants",
-		"pricePerSize":
-			[
-				{"sizes": "110-140", "price": 15},
-				{"sizes": "150-190", "price": 19}
-			],
-		"imgSrc": "path",
-		"brand":"mizuno"
-	},
-	{
-		"id": "panIjf",
-		"name": "PANTS IJF",
-		"category": "pants",
-		"pricePerSize":
-			[
-				{"sizes": "1-7", "price": 35}
-			],
-		"imgSrc": "path",
-		"brand":"mizuno"
-	},
-	{
-		"id": "panIjfBlue",
-		"name": "PANTS IJF BLUE",
-		"category": "pants",
-		"pricePerSize":
-			[
-				{"sizes": "1-7", "price": 39}
-			],
-		"imgSrc": "path",
-		"brand":"mizuno"
-	},
-	{
-		"id": "panIjfBest",
-		"name": "PANTS IJF BEST",
-		"category": "pants",
-		"pricePerSize":
-			[
-				{"sizes": "1-7", "price": 55}
-			],
-		"imgSrc": "path",
-		"brand":"mizuno"
-	},
-	{
-		"id": "panIjfBestBlue",
-		"name": "PANTS IJF BEST BLUE",
-		"category": "pants",
-		"pricePerSize":
-			[
-				{"sizes": "1-7", "price": 59}
-			],
-		"imgSrc": "path",
+		"imgSrc": "webshop/belts/obiMasterBelt.jpg",
 		"brand":"mizuno"
 	},
 	{
@@ -474,7 +418,7 @@
 				{"sizes": "small", "price": 39},
 				{"sizes": "medium", "price": 49}
 			],
-		"imgSrc": "path",
+		"imgSrc": "webshop/bags/bag1.jpg",
 		"brand":"mizuno"
 	},
 	{
@@ -486,7 +430,7 @@
 				{"sizes": "small", "price": 39},
 				{"sizes": "medium", "price": 49}
 			],
-		"imgSrc": "path",
+		"imgSrc": "webshop/bags/bag1.jpg",
 		"brand":"mizuno"
 	},
 	{
@@ -498,7 +442,7 @@
 				{"sizes": "small", "price": 39},
 				{"sizes": "medium", "price": 49}
 			],
-		"imgSrc": "path",
+		"imgSrc": "webshop/bags/bag1.jpg",
 		"brand":"mizuno"
 	},
 	{
@@ -510,7 +454,7 @@
 				{"sizes": "small", "price": 39},
 				{"sizes": "medium", "price": 49}
 			],
-		"imgSrc": "path",
+		"imgSrc": "webshop/bags/bag1.jpg",
 		"brand":"mizuno"
 	}
 ] 

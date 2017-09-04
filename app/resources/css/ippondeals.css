@@ -110,6 +110,9 @@ height: 100%
 	width: 100%;
 }
 
+#categories {
+	flex-basis: 100%;
+}
 
 /* BOOTSTRAP SPINNER */
 .spinner {
