@@ -1,0 +1,23 @@
+/* Devices, Tablets up to small pc screens*/
+@media screen and (min-width : 420px) and (max-width: 1200px) {
+	
+	/* CONTENT */
+	.contentBox {
+		margin-left: 30px;
+		margin-right: 30px;
+	}
+	/* END CONTENT */
+	
+	/* WEBSHOP */
+	.webshopProduct {
+		flex-basis: 50%;
+	}
+	/* END WEBSHOP */
+	
+	/* FOOTER */
+	#footer{
+		margin-left: 30px;
+		margin-right: 30px;
+	}
+	/* END FOOTER */
+}
