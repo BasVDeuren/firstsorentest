@@ -2,9 +2,12 @@
 {% set homepage = true %}
 
 {% block content %}
-<div class="row">
-	<h2 class="col-md-offset-2 col-md-8">
-		<p>Welkom op Ippondeals.be, jouw portaal om judofrakken en meer te kopen!</p>
+<div class="row contentBox">
+	<h2>
+		<p>Welkom op Ippondeals.be, jouw vertrouwelijke portaal voor judopakken en meer.</p>
 	</h2>
+	<div class="mizunoLogoDiv">
+		<img src="../resources/img/webshop/logo-mizuno.jpg" alt="Mizuno" class="mizunoLogo"/>
+	</div>
 </div>
 {% endblock %}

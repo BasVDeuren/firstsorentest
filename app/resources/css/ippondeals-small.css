@@ -1,0 +1,32 @@
+/* Small Devices */
+@media screen and (min-width : 200px) and (max-width: 420px) {
+	/* CONTENT */
+	.contentBox {
+		margin-left: 0px;
+		margin-right: 0px;
+	}
+	
+	.row {
+		margin-left: 0px;
+		margin-right: 0px;
+	}
+	/* END CONTENT */
+	
+	/* WEBSHOP */
+	#shopForm {
+		margin-left: 5px;
+		margin-right: 5px;
+	}
+	
+	.webshopProduct {
+		flex-basis: 100%;
+	}
+	/* END WEBSHOP */
+	
+	/* FOOTER */
+	#footer{
+		margin-left: 5px;
+		margin-right: 5px;
+	}
+	/* END FOOTER */
+}

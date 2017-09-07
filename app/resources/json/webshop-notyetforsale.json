@@ -1,0 +1,56 @@
+{
+		"id": "panKodo",
+		"name": "PANTS KODOMO",
+		"category": "pants",
+		"pricePerSize":
+			[
+				{"sizes": "110-140", "price": 15},
+				{"sizes": "150-190", "price": 19}
+			],
+		"imgSrc": "path",
+		"brand":"mizuno"
+	},
+	{
+		"id": "panIjf",
+		"name": "PANTS IJF",
+		"category": "pants",
+		"pricePerSize":
+			[
+				{"sizes": "1-7", "price": 35}
+			],
+		"imgSrc": "path",
+		"brand":"mizuno"
+	},
+	{
+		"id": "panIjfBlue",
+		"name": "PANTS IJF BLUE",
+		"category": "pants",
+		"pricePerSize":
+			[
+				{"sizes": "1-7", "price": 39}
+			],
+		"imgSrc": "path",
+		"brand":"mizuno"
+	},
+	{
+		"id": "panIjfBest",
+		"name": "PANTS IJF BEST",
+		"category": "pants",
+		"pricePerSize":
+			[
+				{"sizes": "1-7", "price": 55}
+			],
+		"imgSrc": "path",
+		"brand":"mizuno"
+	},
+	{
+		"id": "panIjfBestBlue",
+		"name": "PANTS IJF BEST BLUE",
+		"category": "pants",
+		"pricePerSize":
+			[
+				{"sizes": "1-7", "price": 59}
+			],
+		"imgSrc": "path",
+		"brand":"mizuno"
+	}

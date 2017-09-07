@@ -40,21 +40,44 @@ var removeElement = function(element){
 	$(element).parent("div").remove();
 }
 
+var items;
+var itemsLoaded = false;
+
 $(document).ready(function(){
+	function fillItemData(){
+		$(".needItemData").each(function(index, val){
+			$(val).removeClass("needItemData");
+			var type = $(val).prev().prop('nodeName');
+			if(type == "img"){
+				$(val).attr("src", val.imgSrc);
+			}
+		});
+	}
+
 	var shoppingCartDiv = $("#cartView");
+	items = getItems(function(){itemsLoaded=true;});
 	
 	var cartJSON = getCookie("cart");
 	if(cartJSON !== null && cartJSON !== undefined && cartJSON !== ""){
 		var cart = JSON.parse(cartJSON);
-		$(cart).each(function(i, item){
-			var div = $("<div>");
-			var p = $("<p>", {"id":item.id, "data-size": item.size}).html("id: " + item.id + ", size: " + item.size + ", amount: " + item.amount);
+		$(cart).each(function(i, cartItem){
+			var div = $("<div>", {"id":cartItem.id, "class": "shoppingCartItem"});
+			var img = $("<img>", {"class": "needItemData"});
+			var p = $("<p>", {"data-size": cartItem.size}).html("id: " + cartItem.id + ", size: " + cartItem.size + ", amount: " + cartItem.amount);
 			var button = $("<button>", {"onclick": "removeElement(this)"}).html("remove");
+			div.append(img);
 			div.append(p);
 			div.append(button);
 			shoppingCartDiv.append(div);
 		});
 	}
+	
+	var interval = setInterval(function(){
+		if(itemsLoaded){
+			clearInterval(interval);
+			fillItemData();
+		}
+	}, 200);
 	
 	$("#proceed").click(function(){
 		window.location.href="confirmation.html";

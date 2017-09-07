@@ -1,3 +1,4 @@
+/* CONTENT */
 html, body{
 height: 100%
 }
@@ -50,7 +51,13 @@ height: 100%
 	overflow: hidden;
 }
 
-/* Navigation */
+.contentBox {
+	min-height: 75vh;
+	margin-left: 15px;
+}
+/* END CONTENT */
+
+/* NAVIGATION */
 #navigation-bar {
 	padding-left: 42%;
 	background-color: #802426;
@@ -69,18 +76,13 @@ height: 100%
 #navigation-bar li a :hover{
 	background: rgba(81, 11, 11, 0.98);
 }
+/* END NAVIGATION */
 
-/* FOOTER */
-#footer {
-	border-top-color: white;
-	border-top-style: solid;
-	border-top-width: 1px;
-	position: relative;
+/* HOMEPAGE */
+.mizunoLogo {
+	width: 20vw;
 }
-
-.footer, .push {
-    height: 155px; /* .push must be the same height as .footer */
-}
+/* END HOMEPAGE */
 
 /* WEBSHOP */
 #shopForm {
@@ -89,57 +91,103 @@ height: 100%
 	justify-content: space-between;
 	flex-wrap: wrap;
 }
+
+#mizunoCatalogusText {
+	text-align: center;
+}
+#mizunoCatalogusText a {
+    text-decoration: underline;
+}
+
 .webshopProduct {
-	flex-basis: 30%
+	flex-basis: 30%;
+	display: flex;
+	margin-bottom: 10px;
 }
 
 .productImg {
 	width: 150px;
 }
-/*detailwebshop*/
-#detailImage  img{
-	width: 100%;
-}
 
+div.webshopProduct .img {
+	float: left;
+}
+div.webshopProduct .content {
+	float: left;
+	margin-left: 10px;
+}
+	/* DETAIL WEBSHOP */
+	#detailImage  img{
+		width: 100%;
+	}
 
-/* BOOTSTRAP SPINNER */
-.spinner {
-  width: 100px;
-}
-.spinner input {
-  text-align: right;
-}
-.input-group-btn-vertical {
-  position: relative;
-  white-space: nowrap;
-  width: 1%;
-  vertical-align: middle;
-  display: table-cell;
-}
-.input-group-btn-vertical > .btn {
-  display: block;
-  float: none;
-  width: 100%;
-  max-width: 100%;
-  padding: 8px;
-  margin-left: -1px;
-  position: relative;
-  border-radius: 0;
-}
-.input-group-btn-vertical > .btn:first-child {
-  border-top-right-radius: 4px;
-}
-.input-group-btn-vertical > .btn:last-child {
-  margin-top: -2px;
-  border-bottom-right-radius: 4px;
-}
-.input-group-btn-vertical i{
-  position: absolute;
-  top: 0;
-  left: 4px;
-}
+	#categories {
+		flex-basis: 100%;
+		margin-bottom: 15px;
+	}
+	
+	a.category {
+		text-align: center;
+		padding-top: 2px;
+		padding-bottom: 2px;
+	}
+	/* END DETAIL WEBSHOP*/
+/* END WEBSHOP*/
 
-/* FLEX full height */
+/* SHOPPING CART */
+	.shoppingCartItem {
+		border-style: ridge;
+		padding: 4px;
+	}
+/* END SHOPPING CART */
+
+/* BOOTSTRAP OVERRIDING */
+	/* BOOTSTRAP BUTTONS */
+	#categories .btn-default {
+		color: black !important;
+	}
+	/* END BOOTSTRAP BUTTONS */
+
+	/* BOOTSTRAP SPINNER */
+	.spinner {
+	  width: 100px;
+	}
+	.spinner input {
+	  text-align: right;
+	}
+	.input-group-btn-vertical {
+	  position: relative;
+	  white-space: nowrap;
+	  width: 1%;
+	  vertical-align: middle;
+	  display: table-cell;
+	}
+	.input-group-btn-vertical > .btn {
+	  display: block;
+	  float: none;
+	  width: 100%;
+	  max-width: 100%;
+	  padding: 8px;
+	  margin-left: -1px;
+	  position: relative;
+	  border-radius: 0;
+	}
+	.input-group-btn-vertical > .btn:first-child {
+	  border-top-right-radius: 4px;
+	}
+	.input-group-btn-vertical > .btn:last-child {
+	  margin-top: -2px;
+	  border-bottom-right-radius: 4px;
+	}
+	.input-group-btn-vertical i{
+	  position: absolute;
+	  top: 0;
+	  left: 4px;
+	}
+	/* END BOOTSTRAP SPINNER */
+/* END BOOTSTRAP OVERRIDING */
+	
+/* FLEX FULL HEIGHT */
 .fill-height-or-more {
 	display: flex;
 	min-height: 100vh;
@@ -158,3 +206,21 @@ height: 100%
 #wrapper {
 	min-height: 100vh;
 }
+/* END FLEX FULL HEIGHT */
+
+/* FOOTER */
+#footer {
+	border-top-color: white;
+	border-top-style: solid;
+	border-top-width: 1px;
+	margin-top: 10px;
+}
+
+.left {
+	float: left;
+}
+
+.right {
+	float: right;
+}
+/* END FOOTER */

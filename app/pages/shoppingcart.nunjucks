@@ -6,11 +6,13 @@
 {% endblock %}
 
 {% block content %}
-	<div id="cartView">
-	</div>
-	
-	<div id="buttons">
-		<button id="goShopping">Verder winkelen</button>
-		<button id="proceed">Verder</button>
+	<div class="contentBox">
+		<div id="cartView">
+		</div>
+		
+		<div id="buttons">
+			<button id="goShopping">Verder winkelen</button>
+			<button id="proceed">Aankoop afronden</button>
+		</div>
 	</div>
 {% endblock %}

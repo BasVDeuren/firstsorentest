@@ -13,8 +13,8 @@ $(document).ready(function(){
 		$("#detailInfo #niveau").html(cookieProduct.niveau);
 		$("#detailInfo #brand").html(cookieProduct.brand);
 		$.each(cookieProduct.pricePerSize, function(index, priceAndSize){			
-			var startSize = parseInt(priceAndSize.sizes.split("-")[0]);
-			var endSize = parseInt(priceAndSize.sizes.split("-")[1]);
+			var startSize = parseFloat(priceAndSize.sizes.split("-")[0]);
+			var endSize = parseFloat(priceAndSize.sizes.split("-")[1]);
 			var step = 0.5;
 			if(startSize >= 100){
 				step = 10;
