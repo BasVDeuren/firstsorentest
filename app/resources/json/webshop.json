@@ -31,6 +31,7 @@
 				}
 			],
 		"imgSrc": "webshop/hajime.jpg",
+		"pdfSrc": "hajime.pdf",
 		"brand":"mizuno"
 	},
 	{
@@ -50,6 +51,7 @@
 				}
 			],
 		"imgSrc": "webshop/kodomo.jpg",
+		"pdfSrc": "kodomo.pdf",
 		"brand":"mizuno"
 	},
 	{
@@ -73,6 +75,7 @@
 				}
 			],
 		"imgSrc": "webshop/hayato.jpg",
+		"pdfSrc": "hayato.pdf",
 		"brand":"mizuno"
 	},
 	{
@@ -96,6 +99,7 @@
 				}
 			],
 		"imgSrc": "webshop/hayato_blue.jpg",
+		"pdfSrc": "hayato.pdf",
 		"brand":"mizuno"
 	},
 	{
@@ -119,6 +123,7 @@
 				}
 			],
 		"imgSrc": "webshop/keiko.jpg",
+		"pdfSrc": "keiko.pdf",
 		"brand":"mizuno"
 	},
 	{
@@ -142,6 +147,7 @@
 				}
 			],
 		"imgSrc": "webshop/shiai.jpg",
+		"pdfSrc": "shiai.pdf",
 		"brand":"mizuno"
 	},
 	{
@@ -165,6 +171,7 @@
 				}
 			],
 		"imgSrc": "webshop/shiai_blue.jpg",
+		"pdfSrc": "shiai.pdf",
 		"brand":"mizuno"
 	},
 	{
@@ -188,6 +195,7 @@
 				}
 			],
 		"imgSrc": "webshop/yusho_ijf.jpg",
+		"pdfSrc": "yusho_ijf.pdf",
 		"brand":"mizuno"
 	},
 	{
@@ -211,6 +219,7 @@
 				}
 			],
 		"imgSrc": "webshop/yusho_ijf_blue.jpg",
+		"pdfSrc": "yusho_ijf.pdf",
 		"brand":"mizuno"
 	},
 	{
@@ -225,6 +234,7 @@
 				{"sizes": "5-7", "price": 209}
 			],
 		"imgSrc": "webshop/yusho_ijf_best.jpg",
+		"pdfSrc": "yusho_ijf_best.pdf",
 		"brand":"mizuno"
 	},
 	{
@@ -239,6 +249,7 @@
 				{"sizes": "5-7", "price": 235}
 			],
 		"imgSrc": "webshop/yusho_ijf_best_blue.jpg",
+		"pdfSrc": "yusho_ijf_best.pdf",
 		"brand":"mizuno"
 	},
 	{
@@ -254,6 +265,7 @@
 				{"sizes": "6-7", "price": 349}
 			],
 		"imgSrc": "webshop/yusho_ijf_japan.jpg",
+		"pdfSrc": "yusho_ijf_japan.pdf",
 		"brand":"mizuno"
 	},
 	{
@@ -269,6 +281,7 @@
 				{"sizes": "6-7", "price": 395}
 			],
 		"imgSrc": "webshop/yusho_ijf_japan_blue.jpg",
+		"pdfSrc": "yusho_ijf_japan.pdf",
 		"brand":"mizuno"
 	},
 	{
