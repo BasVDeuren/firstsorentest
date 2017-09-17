@@ -7,9 +7,6 @@
 {% set webshop = true %}
 
 {% block content %}
-<div id="catalogusInfo">
-	<p id="mizunoCatalogusText">Meer info over de producten vind je in de <a href="../resources/files/Mizuno-catalogus.pdf">Mizuno catalogus</a></p>
-</div>
 <div id="shopForm">
 	<div id="categories">
 		

@@ -9,6 +9,12 @@ $(document).ready(function(){
 		});
 		
 		$("#detailImage img").attr("src", "../resources/img/" + cookieProduct.imgSrc);
+		if(cookieProduct.pdfSrc !== undefined){
+			var productPdf = $("<a>", {"href":"../resources/files/" + cookieProduct.pdfSrc}).html(cookieProduct.pdfSrc);
+			$("#detailInfo #moreInfo").append(productPdf);
+		} else {
+			$("#detailInfo #moreInfo").parent("p").remove();
+		}
 		$("#detailInfo #name").html(cookieProduct.name);
 		$("#detailInfo #niveau").html(cookieProduct.niveau);
 		$("#detailInfo #brand").html(cookieProduct.brand);

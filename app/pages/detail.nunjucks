@@ -12,6 +12,7 @@
 			<img alt="detail image"/>
 		</div>
 		<div id="detailInfo" class="col-md-10">
+			<p>Meer info: <span id="moreInfo"></span></p>
 			<p>Naam: <span id="name"></span></p>
 			<p>Niveau: <span id="niveau"></span></p>
 			<p>Merk: <span id="brand"></span></p>
