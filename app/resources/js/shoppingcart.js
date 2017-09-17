@@ -82,4 +82,8 @@ $(document).ready(function(){
 	$("#proceed").click(function(){
 		window.location.href="confirmation.html";
 	});
+	
+	$("#goShopping").click(function(){
+		window.location.href="webshop.html";
+	});
 });
