@@ -1,6 +1,6 @@
 /* CONTENT */
 html, body{
-height: 100%
+	height: 100%
 }
 
 #body a, h1, p, h2 , label, span{
@@ -128,6 +128,35 @@ div.webshopProduct .content {
 	#moreInfo a {
 		text-decoration: underline;
 	}
+	
+	#sizeAndPrices {
+		margin-left: 0px;
+		margin-bottom: 15px;
+	}
+	
+	#sizeAndPrices button{
+		background-color: #962d30;
+		color: white;
+	}
+	
+	#sizeAndPriceDropdown {
+		background-color: #a05658;
+	}
+	
+	#sizeAndPriceDropdown li{
+		color: white;
+	}
+	
+	#sizeAndPriceDropdown a:hover {
+		color: black !important;
+		background-color: #a05658 !important;
+		background-image: linear-gradient(to bottom,#f7a4a4 0,#bd4b4b 100%);
+	}
+	
+	#amount {
+		margin-top: 10px;
+	}
+	
 	/* END DETAIL WEBSHOP*/
 /* END WEBSHOP*/
 

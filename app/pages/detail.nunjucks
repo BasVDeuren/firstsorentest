@@ -16,6 +16,20 @@
 			<p>Naam: <span id="name"></span></p>
 			<p>Niveau: <span id="niveau"></span></p>
 			<p>Merk: <span id="brand"></span></p>
+			<div id="sizeAndPrices">
+				<div class="dropdown">
+				  <button class="btn btn-ippon dropdown-toggle" type="button" data-toggle="dropdown">
+				  Maat en prijs
+				  <span class="caret"></span></button>
+				  <ul id="sizeAndPriceDropdown" class="dropdown-menu">
+				  </ul>
+				</div>
+				<div id="amountDiv">
+				<label for="amount">Aantal: </label>
+				<input type="text" id="amount"/>
+				</div>
+			</div>
+			
 			<div id="pricePerSize"></div>
 			<button id="orderButton">Bestel</button>
 			<button id="backButton">Terug</button>

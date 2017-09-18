@@ -1,4 +1,13 @@
+function pickSizePriceSelection(element){
+	$("#sizeAndPrices button.btn-ippon").html($(element).html() + " <span class=\"caret\"></span>");
+	$("#amountDiv").show();
+	$("#amount").attr("data-size", $(element).parent("li").data("size"));
+	$("#amount").attr("data-id", $(element).parent("li").data("id"));
+}
+
 $(document).ready(function(){
+	$("#amountDiv").hide();
+
 	function setProductDataByWebshopProducts(products){
 		var cookieProduct;
 		$.each(products, function( index, product ) {
@@ -26,15 +35,10 @@ $(document).ready(function(){
 				step = 10;
 			}
 			for(var i = startSize; i <= endSize; i += step){
-				if(i != 0.5){
-					var price = $("<span>", {"class":"col-xs-2"}).html("\u20AC" + priceAndSize.price);
-					var size = $("<span>", {"class":"col-xs-1"}).html(i + ": ");
-					var input = $("<input>", {id:""+cookieProduct.id + "-seperator-" + i, "type": "text", "class":"col-xs-2", "value": "0"})
-					var paragraph = $("<p>", {"class": "row"});
-					paragraph.append(size);
-					paragraph.append(price);
-					paragraph.append(input);
-					$("#detailInfo #pricePerSize").append(paragraph);
+				if(i != 0.5){					
+					var aSizePrice = $("<a>", {"href":"#", "onclick": "pickSizePriceSelection(this)"}).html(i + " - &euro;" + priceAndSize.price);
+					var liSizePrice = $("<li>", {"data-id": cookieProduct.id, "data-size": i, "data-price": priceAndSize.price}).html(aSizePrice);
+					$("#detailInfo #sizeAndPriceDropdown").append(liSizePrice);
 				}
 			}
 		});
@@ -52,16 +56,10 @@ $(document).ready(function(){
 	});
 	
 	$("#orderButton").click(function(){
-		$("input").each(function(i, inputField){
-			if($(inputField).val() > 0){
-				var amount = $(inputField).val();
-				var idAttr = $(inputField).attr("id");
-				var id = idAttr.split("-seperator-")[0];
-				var size = idAttr.split("-seperator-")[1];
-				
-				addToCart(id, size, amount);
-			}
-		});
+		var amount = $("#amount").val();
+		var size = $("#amount").data("size");
+		var id = $("#amount").data("id");
+		addToCart(id, size, amount);
 	
 		alert("Uw bestelling werd in acht genomen, ga naar uw winkelwagen om uw bestelling te zien.");
 	});
