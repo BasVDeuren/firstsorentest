@@ -157,6 +157,22 @@ div.webshopProduct .content {
 		margin-top: 10px;
 	}
 	
+	.modal p {
+		color: black !important;
+	}
+	
+	.modal-content {
+		background-color: #dedede;
+	}
+	
+	.modal-header {
+		background-color: #c7d1c7;
+	}
+	
+	.modal-footer {
+		background-color: #d6d6d6;
+	}
+	
 	/* END DETAIL WEBSHOP*/
 /* END WEBSHOP*/
 

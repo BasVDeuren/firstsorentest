@@ -7,3 +7,37 @@ var getItems = function(callback){
 		//ToDo, popup a screen to contact Sören.
 	});
 };
+
+var getItemById = function(items, id){
+	var foundItem;
+	$(items).each(function(index, val){
+		if(val.id == id){
+			foundItem = val;
+			return;
+		}
+	});
+	return foundItem;
+}
+
+var getPriceForSize = function(item, size){
+	var price;
+	
+	$(item.pricePerSize).each(function(k, priceAndSize){
+		if(
+			(
+			priceAndSize.sizes.split("-").length == 2 && 
+			priceAndSize.sizes.split("-")[0] <= size && 
+			priceAndSize.sizes.split("-")[1] >= size
+			) ||
+			(
+			priceAndSize.sizes.split("-").length == 1 && 
+			priceAndSize.sizes.split("-")[0] == size
+			)
+		){
+			price = priceAndSize.price;
+			return;
+		}
+	});
+
+	return price;
+}

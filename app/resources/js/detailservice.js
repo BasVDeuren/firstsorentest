@@ -3,6 +3,8 @@ function pickSizePriceSelection(element){
 	$("#amountDiv").show();
 	$("#amount").attr("data-size", $(element).parent("li").data("size"));
 	$("#amount").attr("data-id", $(element).parent("li").data("id"));
+	
+	$("#orderButton").removeAttr("disabled");
 }
 
 $(document).ready(function(){
@@ -57,10 +59,8 @@ $(document).ready(function(){
 	
 	$("#orderButton").click(function(){
 		var amount = $("#amount").val();
-		var size = $("#amount").data("size");
-		var id = $("#amount").data("id");
+		var size = $("#amount").attr("data-size");
+		var id = $("#amount").attr("data-id");
 		addToCart(id, size, amount);
-	
-		alert("Uw bestelling werd in acht genomen, ga naar uw winkelwagen om uw bestelling te zien.");
 	});
 });

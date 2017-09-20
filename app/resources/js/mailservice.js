@@ -28,9 +28,6 @@ $(document).ready(function(){
 		emailjs.send("gmail","ippondeals_order_template",{
 		  "to_email": $("#emailAddress").val(),
 		  "to_name": $("#lastName").val() + $("#firstName").val(),
-		  //"number_of_judo_frakken": $("#numberOfJudoFrakken").val(), 
-		  //"price_per_frak": $("#pricePerFrak").val(),
-		  //"total": $("#pricePerFrak").val() * $("#numberOfJudoFrakken").val()
 		  "order": orders.html()
 		}).then(
 		  function() {

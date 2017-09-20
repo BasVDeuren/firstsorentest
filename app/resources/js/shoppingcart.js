@@ -1,4 +1,10 @@
 var addToCart = function(id, size, amount){
+	var itemAlreadyInCart = getItemFromCart (id, size);
+	if(itemAlreadyInCart !== undefined){
+		amount = parseInt(amount) + parseInt(itemAlreadyInCart.amount);
+		removeFromCart(id, size);
+	}
+	
 	var cartJSON = getCookie( "cart" );
 	var cart;
 	if(cartJSON === undefined || cartJSON === null || cartJSON == ""){
@@ -14,6 +20,24 @@ var addToCart = function(id, size, amount){
 	cart.push(item);
 	var jsonCart = JSON.stringify( cart );
 	setCookie("cart", jsonCart, 20);
+}
+
+var getItemFromCart = function(id, size) {
+	var resultCartItem;
+	var cartJSON = getCookie( "cart" );
+	var cart;
+	if(cartJSON === undefined || cartJSON === null || cartJSON == ""){
+		cart = [];
+	} else {
+		cart = JSON.parse(cartJSON);
+	}
+	$(cart).each(function(index, cartItem) {
+		if (cartItem.id == id && cartItem.size == size) {
+			resultCartItem = cartItem;
+			return;
+		}
+	});
+	return resultCartItem;
 }
 
 var removeFromCart = function(id, size){
@@ -35,9 +59,9 @@ var removeFromCart = function(id, size){
 }
 
 var removeElement = function(element){
-	var id = $(element).parent("div").find("p").attr("id");
-	removeFromCart(id, $(element).parent("div").find("p").attr("data-size"));
-	$(element).parent("div").remove();
+	var id = $(element).closest(".shoppingCartItem").data("id");
+	removeFromCart(id, $(element).parent("div").find(".size").attr("data-size"));
+	$(element).closest(".shoppingCartItem").remove();
 }
 
 var items;
@@ -47,9 +71,17 @@ $(document).ready(function(){
 	function fillItemData(){
 		$(".needItemData").each(function(index, val){
 			$(val).removeClass("needItemData");
-			var type = $(val).prev().prop('nodeName');
-			if(type == "img"){
-				$(val).attr("src", val.imgSrc);
+			var type = $(val)[0].tagName;
+			var item = getItemById(items.responseJSON, $(val).closest("div .shoppingCartItem").data("id"));
+			if(type == "IMG"){
+				$(val).attr("src", "../resources/img/" + item.imgSrc);
+				$(val).attr("class", "productImg");
+			} else {
+				if($(val).data("type") == "price"){
+					$(val).html($(val).html() + getPriceForSize(item, $(val).closest("div").find("p.size").data("size")));
+				} else {
+					$(val).html($(val).html() + item[$(val).data("type")]);
+				}
 			}
 		});
 	}
@@ -61,13 +93,23 @@ $(document).ready(function(){
 	if(cartJSON !== null && cartJSON !== undefined && cartJSON !== ""){
 		var cart = JSON.parse(cartJSON);
 		$(cart).each(function(i, cartItem){
-			var div = $("<div>", {"id":cartItem.id, "class": "shoppingCartItem"});
+			var div = $("<div>", {"data-id":cartItem.id, "class": "shoppingCartItem row"});
+			var imgDiv = $("<div>", {"class":"col-lg-2 col-md-4 col-sm-12 col-xs-12"});
 			var img = $("<img>", {"class": "needItemData"});
-			var p = $("<p>", {"data-size": cartItem.size}).html("id: " + cartItem.id + ", size: " + cartItem.size + ", amount: " + cartItem.amount);
+			imgDiv.append(img);
+			var contentDiv = $("<div>", {"class": "col-lg-9 col-md-7 col-sm-12 col-xs-12"});
+			var pName = $("<p>",{"class": "needItemData", "data-type": "name"}).html("Naam: ");
+			var pAmount = $("<p>",{}).html("Aantal: " + cartItem.amount);
+			var pSize = $("<p>",{"class": "size", "data-size": cartItem.size}).html("Maat: " + cartItem.size);
+			var pPrice = $("<p>",{"class": "needItemData", "data-type": "price"}).html("Prijs: €");
 			var button = $("<button>", {"onclick": "removeElement(this)"}).html("remove");
-			div.append(img);
-			div.append(p);
-			div.append(button);
+			contentDiv.append(pName);
+			contentDiv.append(pAmount);
+			contentDiv.append(pSize);
+			contentDiv.append(pPrice);
+			contentDiv.append(button);
+			div.append(imgDiv);
+			div.append(contentDiv);
 			shoppingCartDiv.append(div);
 		});
 	}

@@ -55,9 +55,35 @@
 			</div>
 			
 			<div id="pricePerSize"></div>
-			<button id="orderButton">Bestel</button>
-			<button id="backButton">Terug</button>
+			<button 
+				id="orderButton" 
+				data-toggle="modal" data-target="#orderSuccessModal" 
+				class="btn btn-default" 
+				disabled="disabled">
+					Bestel
+			</button>
+			<button id="backButton" class="btn btn-default">Terug</button>
 		</div>
+	</div>
+	
+	<!-- Modal -->
+	<div id="orderSuccessModal" class="modal fade" role="dialog">
+	  <div class="modal-dialog">
+		<!-- Modal content-->
+		<div class="modal-content">
+		  <div class="modal-header">
+			<button type="button" class="close" data-dismiss="modal">&times;</button>
+			<h4 class="modal-title">Toegevoegd aan winkelmand</h4>
+		  </div>
+		  <div class="modal-body">
+			<p>Uw bestelling is toegevoegd aan de winkelmand.</p>
+		  </div>
+		  <div class="modal-footer">
+			<button type="button" class="btn btn-default" data-dismiss="modal">Nieuwe maat kiezen</button>
+			<button type="button" class="btn btn-default" data-dismiss="modal" id="goShopping">Verder winkelen</button>
+		  </div>
+		</div>
+	  </div>
 	</div>
 
 		  <div id="footer">
@@ -77,7 +103,8 @@
 	</div>
 </div>
 <!--js-->
-<script src="https://code.jquery.com/jquery-latest.min.js"></script>
+<!--<script src="https://code.jquery.com/jquery-latest.min.js"></script>-->
+<script type="text/javascript" src="../resources/js/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
 <script src="../resources/bootstrap/js/bootstrap.js" type="text/javascript"></script>
 <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
