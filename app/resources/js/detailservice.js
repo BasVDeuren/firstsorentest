@@ -57,6 +57,10 @@ $(document).ready(function(){
 		window.location.href = './webshop.html';
 	});
 	
+	$("#shoppingCart").click(function(){
+		window.location.href = './shoppingcart.html'
+	});
+	
 	$("#orderButton").click(function(){
 		var amount = $("#amount").val();
 		var size = $("#amount").attr("data-size");
