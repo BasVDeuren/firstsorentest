@@ -94,10 +94,10 @@ $(document).ready(function(){
 		var cart = JSON.parse(cartJSON);
 		$(cart).each(function(i, cartItem){
 			var div = $("<div>", {"data-id":cartItem.id, "class": "shoppingCartItem row"});
-			var imgDiv = $("<div>", {"class":"col-lg-2 col-md-4 col-sm-12 col-xs-12"});
+			var imgDiv = $("<div>", {"class":"col-lg-2 col-md-4 col-sm-4 col-xs-12"});
 			var img = $("<img>", {"class": "needItemData"});
 			imgDiv.append(img);
-			var contentDiv = $("<div>", {"class": "col-lg-9 col-md-7 col-sm-12 col-xs-12"});
+			var contentDiv = $("<div>", {"class": "col-lg-9 col-md-7 col-sm-8 col-xs-12"});
 			var pName = $("<p>",{"class": "needItemData", "data-type": "name"}).html("Naam: ");
 			var pAmount = $("<p>",{}).html("Aantal: " + cartItem.amount);
 			var pSize = $("<p>",{"class": "size", "data-size": cartItem.size}).html("Maat: " + cartItem.size);

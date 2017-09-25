@@ -10,7 +10,11 @@
 <link rel="stylesheet" href="../resources/css/ippondeals.css">
 <link rel="stylesheet" href="../resources/css/ippondeals-medium.css">
 <link rel="stylesheet" href="../resources/css/ippondeals-small.css">
-<script src="https://use.fontawesome.com/3052fc8cb8.js"></script>	 
+<script src="https://use.fontawesome.com/3052fc8cb8.js"></script>
+
+	<link rel="stylesheet" href="../resources/css/awesome-bootstrap-checkbox.css">
+	<link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+
 </head>
 <body id="body">
 <div id="wrapper">
@@ -32,12 +36,28 @@
 </nav>
 		  
 	<div id="contactInfo">
-		<p><span id="lastNameLabel">Naam: </span> <input type="text" id="name"/></p>
-		<p><span id="firstNameLabel">Voornaam: </span> <input type="text" id="name"/></p>
-		<p><span id="emailLabel">email adres: </span> <input type="text" id="emailAddress"/></p>
+		<p class="row"><span id="lastNameLabel" class="col-sm-2">Naam: </span> <input type="text" id="name" class="col-sm-2"/></p>
+		<p class="row"><span id="firstNameLabel" class="col-sm-2">Voornaam: </span> <input type="text" id="name" class="col-sm-2"/></p>
+		<p class="row"><span id="emailLabel" class="col-sm-2">Email adres: </span> <input type="text" id="emailAddress" class="col-sm-2"/></p>
+		<p class="row">
+			<div class="checkbox col-sm-offset-2">
+				<input type="checkbox" id="delivery"/>
+				<label for="delivery">Leveren?</label>
+			</div>
+		</p>
+		<div id="addressDiv">
+			<p class="row"><span id="postalCodeLabel" class="col-sm-2">Postcode: </span> <input type="number" maxlength="4" id="postalCode" class="col-sm-2"/></p>
+			<p class="row"><span id="cityLabel" class="col-sm-2">Stad/Gemeente: </span> <input type="text" id="city" class="col-sm-2"/></p>
+			<p class="row"><span id="numberLabel" class="col-sm-2">Huisnummer: </span> <input type="number" id="number" class="col-sm-2"/></p>
+			<p class="row"><span id="streetLabel" class="col-sm-2">Straat: </span> <input type="text" id="street" class="col-sm-2"/></p>
+			<p class="row"><span id="busLabel" class="col-sm-2">Bus of extra info: </span> <input type="text" id="bus" class="col-sm-2"/></p>
+		</div>
+		<p class="row">
+			<span id="extraInfoLabel" class="col-sm-2">Exra info: </span> <textarea rows="4" cols="50" id="extraInfo"> </textarea>
+		</p>
 	</div>
 	<div id="buttons">
-		<button id="sendMailButton">Stuur 'factuur'</button>
+		<button id="sendMailButton" class="btn btn-primary">Bestel</button>
 	</div>
 
 		  <div id="footer">
@@ -66,6 +86,7 @@
 <script type="text/javascript" src="../resources/js/cookieservice.js"></script >
 
 	<script type="text/javascript" src="../resources/js/mailservice.js"></script>
+	<script type="text/javascript" src="../resources/js/confirmation.js"></script>
 
 </body>
 </html>

@@ -7,7 +7,7 @@ html, body{
 	color: white !important;
 }
 
-#body input {
+#body input, textarea{
 	color: black;
 }
 
@@ -180,6 +180,7 @@ div.webshopProduct .content {
 	.shoppingCartItem {
 		border-style: ridge;
 		padding: 4px;
+		margin-right: 0px
 	}
 /* END SHOPPING CART */
 

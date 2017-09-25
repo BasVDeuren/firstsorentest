@@ -19,3 +19,7 @@ var getCookie = function(cname) {
     }
     return "";
 }
+
+var clearCart = function(){
+	setCookie( "cart", "", 20);
+}

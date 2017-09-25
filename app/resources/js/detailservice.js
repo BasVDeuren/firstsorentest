@@ -57,7 +57,7 @@ $(document).ready(function(){
 		window.location.href = './webshop.html';
 	});
 	
-	$("#shoppingCart").click(function(){
+	$("#shoppingCartModalButton").click(function(){
 		window.location.href = './shoppingcart.html'
 	});
 	

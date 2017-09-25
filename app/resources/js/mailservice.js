@@ -25,13 +25,33 @@ $(document).ready(function(){
 		var totalP = $("<p>", {}).html("Totaal: " + total);
 		orders.append(totalP);
 		
-		emailjs.send("gmail","ippondeals_order_template",{
+		var address = $("<div>");
+		if($("#delivery").is(":checked")){
+			address = $("<div>");
+			pAddress = $("<p>").html("Adres (Wordt geleverd): ");
+			var ulAddress = $("<ul>");
+			var liStreetValue = $("<li>").html("Straat: " + $("#street").val() + " " + $("#number").val() + " " + $("#bus").val());
+			var liCityValue = $("<li>").html("Stad/Gemeente: " + $("#postalCode").val() + " " + $("#city").val());
+			
+			ulAddress.append(liStreetValue);
+			ulAddress.append(liCityValue);
+			address.append(pAddress);
+			address.append(ulAddress);
+		} else {
+			var pAddress = $("<p>").html("Levering is niet van toepassing.");
+			address.append(pAddress);
+		}
+		
+		emailjs.send("gmail_ippondeals","ippondeals_order_template",{
 		  "to_email": $("#emailAddress").val(),
 		  "to_name": $("#lastName").val() + $("#firstName").val(),
-		  "order": orders.html()
+		  "order": orders.html(),
+		  "address": address.html(),
+		  "extrainfo": $("#extraInfo").val()
 		}).then(
 		  function() {
 			console.log("SUCCESS");
+			clearCart();
 		  }, 
 		  function(error) {
 			console.log("FAILED", error);
