@@ -6,6 +6,8 @@ function setChosenProductToCookie(e){
 	e.preventDefault();
 }
 function changeCategory(category) {
+	$("#extraInfo").hide();
+
 	var elem = $("a[data-category='"+category+"']");
 	$("#categories a").each(function(index, val){
 		$(val).removeClass("btn-primary");
@@ -13,6 +15,10 @@ function changeCategory(category) {
 	});
 	$(elem).addClass("btn-primary");
 	$(elem).removeClass("btn-default");
+	if(category == 'obi'){
+		$("#extraInfoPdfLink").attr("href", "../resources/files/obi.pdf");
+		$("#extraInfo").show();
+	}
 	$("#shopForm .webshopProduct").each(function(index, val){
 		if($(val).attr("class").indexOf(category) < 0){
 			$(val).addClass("hidden");

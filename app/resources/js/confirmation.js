@@ -8,4 +8,8 @@ $(document).ready(function(){
 			$("#addressDiv").show();
 		}
 	});
+	
+	$("#okHomeButtonModal").click(function(){
+		window.location.href="index.html"
+	})
 });

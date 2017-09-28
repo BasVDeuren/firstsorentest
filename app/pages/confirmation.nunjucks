@@ -35,4 +35,25 @@
 	<div id="buttons">
 		<button id="sendMailButton" class="btn btn-primary">Bestel</button>
 	</div>
+	
+	
+	<!-- Modal -->
+	<div id="confirmationModal" class="modal fade" role="dialog">
+	  <div class="modal-dialog">
+		<!-- Modal content-->
+		<div class="modal-content">
+		  <div class="modal-header">
+			<button type="button" class="close" data-dismiss="modal">&times;</button>
+			<h4 class="modal-title">Bestelling wordt verwerkt</h4>
+		  </div>
+		  <div class="modal-body">
+			<p>Uw bestellig is afgerond, u krijgt dadelijk een email met alle gegevens in. U kan contact opnemen voor verdere info en indien
+			gevraagd wordt er contact met u opgenomen.</p>
+		  </div>
+		  <div class="modal-footer">
+			<button id="okHomeButtonModal" type="button" class="btn btn-default">Ok</button>
+		  </div>
+		</div>
+	  </div>
+	</div>
 {% endblock %}

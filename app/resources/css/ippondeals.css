@@ -113,6 +113,11 @@ div.webshopProduct .content {
 	#detailImage  img{
 		width: 100%;
 	}
+	
+	#extraInfo {
+		flex-basis: 100%;
+		margin-bottom: 15px;
+	}
 
 	#categories {
 		flex-basis: 100%;
@@ -250,6 +255,12 @@ div.webshopProduct .content {
 	min-height: 100vh;
 }
 /* END FLEX FULL HEIGHT */
+
+/* BLOCKUI */
+	.blockUI  h1 {
+		color: black !important;
+	}
+/* END BLOCK UI */
 
 /* FOOTER */
 #footer {

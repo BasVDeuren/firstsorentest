@@ -12,6 +12,7 @@ $(document).ready(function(){
 	}
 	$("#sendMailButton").unbind('click').click(function(e){
 		e.preventDefault();
+		$.blockUI({ message: '<h1>Uw aanvraag wordt verwerkt, even geduld.</h1>' }); 
 		var accurateOrders = getAccurateOrders();
 		var orders = $("<div>");
 		var ul = $("<ul>");
@@ -50,11 +51,13 @@ $(document).ready(function(){
 		  "extrainfo": $("#extraInfo").val()
 		}).then(
 		  function() {
-			console.log("SUCCESS");
+			$.unblockUI();
+			$('#confirmationModal').modal('show');
 			clearCart();
 		  }, 
 		  function(error) {
 			console.log("FAILED", error);
+			$.unblockUI();
 		  }
 		);
 	});

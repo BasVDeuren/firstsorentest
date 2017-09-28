@@ -26,7 +26,7 @@
 				</div>
 				<div id="amountDiv">
 				<label for="amount">Aantal: </label>
-				<input type="text" id="amount"/>
+				<input type="number" id="amount"/>
 				</div>
 			</div>
 			

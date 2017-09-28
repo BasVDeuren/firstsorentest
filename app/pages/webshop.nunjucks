@@ -11,5 +11,8 @@
 	<div id="categories">
 		
 	</div>
+	<div id="extraInfo">
+		<p>Meer info over deze producten vindt u <a id="extraInfoPdfLink" href="">hier</a></p>
+	</div>
 </div>
 {% endblock %}
