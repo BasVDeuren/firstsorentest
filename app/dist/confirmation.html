@@ -39,18 +39,31 @@
 		<p class="row"><span id="lastNameLabel" class="col-sm-2">Naam: </span> <input type="text" id="name" class="col-sm-2"/></p>
 		<p class="row"><span id="firstNameLabel" class="col-sm-2">Voornaam: </span> <input type="text" id="name" class="col-sm-2"/></p>
 		<p class="row"><span id="emailLabel" class="col-sm-2">Email adres: </span> <input type="text" id="emailAddress" class="col-sm-2"/></p>
-		<p class="row">
-			<div class="checkbox col-sm-offset-2">
-				<input type="checkbox" id="delivery"/>
-				<label for="delivery">Leveren?</label>
-			</div>
-		</p>
 		<div id="addressDiv">
 			<p class="row"><span id="postalCodeLabel" class="col-sm-2">Postcode: </span> <input type="number" maxlength="4" id="postalCode" class="col-sm-2"/></p>
 			<p class="row"><span id="cityLabel" class="col-sm-2">Stad/Gemeente: </span> <input type="text" id="city" class="col-sm-2"/></p>
 			<p class="row"><span id="numberLabel" class="col-sm-2">Huisnummer: </span> <input type="number" id="number" class="col-sm-2"/></p>
 			<p class="row"><span id="streetLabel" class="col-sm-2">Straat: </span> <input type="text" id="street" class="col-sm-2"/></p>
 			<p class="row"><span id="busLabel" class="col-sm-2">Bus of extra info: </span> <input type="text" id="bus" class="col-sm-2"/></p>
+		</div>
+		<p class="row">
+			<div class="checkbox col-sm-offset-2">
+				<input type="checkbox" id="delivery"/>
+				<label for="delivery">Leveren?</label>
+			</div>
+		</p>
+		<p class="row">
+			<div class="checkbox col-sm-offset-2">
+				<input type="checkbox" id="deliveryDifferentAddress"/>
+				<label for="deliveryDifferentAddress">Leveradres anders dan facturatieadres?</label>
+			</div>
+		</p>
+		<div id="extraAddressDiv">
+			<p class="row"><span id="extraPostalCodeLabel" class="col-sm-2">Postcode: </span> <input type="number" maxlength="4" id="extraPostalCode" class="col-sm-2"/></p>
+			<p class="row"><span id="extraCityLabel" class="col-sm-2">Stad/Gemeente: </span> <input type="text" id="extraCity" class="col-sm-2"/></p>
+			<p class="row"><span id="extraNumberLabel" class="col-sm-2">Huisnummer: </span> <input type="number" id="extraNumber" class="col-sm-2"/></p>
+			<p class="row"><span id="extraStreetLabel" class="col-sm-2">Straat: </span> <input type="text" id="extraStreet" class="col-sm-2"/></p>
+			<p class="row"><span id="extraBusLabel" class="col-sm-2">Bus of extra info: </span> <input type="text" id="extraBus" class="col-sm-2"/></p>
 		</div>
 		<p class="row">
 			<span id="extraInfoLabel" class="col-sm-2">Exra info: </span> <textarea rows="4" cols="50" id="extraInfo"> </textarea>

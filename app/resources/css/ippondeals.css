@@ -187,6 +187,10 @@ div.webshopProduct .content {
 		padding: 4px;
 		margin-right: 0px
 	}
+	
+	#buttons {
+		margin-top: 10px;
+	}
 /* END SHOPPING CART */
 
 /* BOOTSTRAP OVERRIDING */

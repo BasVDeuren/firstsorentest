@@ -102,7 +102,7 @@ $(document).ready(function(){
 			var pAmount = $("<p>",{}).html("Aantal: " + cartItem.amount);
 			var pSize = $("<p>",{"class": "size", "data-size": cartItem.size}).html("Maat: " + cartItem.size);
 			var pPrice = $("<p>",{"class": "needItemData", "data-type": "price"}).html("Prijs: €");
-			var button = $("<button>", {"onclick": "removeElement(this)"}).html("remove");
+			var button = $("<button>", {"onclick": "removeElement(this)"}).html("Verwijderen");
 			contentDiv.append(pName);
 			contentDiv.append(pAmount);
 			contentDiv.append(pSize);

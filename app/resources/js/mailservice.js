@@ -18,29 +18,43 @@ $(document).ready(function(){
 		var ul = $("<ul>");
 		var total = 0;
 		$(accurateOrders).each(function(i, order){
-			var li = $("<li>", {id: order.id}).html("Naam: " + order.name + ", prijs: " + order.price + ", aantal: " + order.amount);
+			var li = $("<li>", {id: order.id}).html("Naam: " + order.name + ", prijs: €" + order.price + ", aantal: " + order.amount);
 			ul.append(li);
 			total = total + (parseInt(order.amount) * parseInt(order.price));
 		});
 		orders.append(ul);
-		var totalP = $("<p>", {}).html("Totaal: " + total);
+		var totalP = $("<p>", {}).html("Totaal: €" + total);
 		orders.append(totalP);
 		
 		var address = $("<div>");
+		pAddress = $("<p>").html("Adres: ");
+		var ulAddress = $("<ul>");
+		var liStreetValue = $("<li>").html("Straat: " + $("#street").val() + " " + $("#number").val() + " " + $("#bus").val());
+		var liCityValue = $("<li>").html("Stad/Gemeente: " + $("#postalCode").val() + " " + $("#city").val());
+		
+		ulAddress.append(liStreetValue);
+		ulAddress.append(liCityValue);
+		address.append(pAddress);
+		address.append(ulAddress);
+		
+		var extraAddress = $("<div>");
 		if($("#delivery").is(":checked")){
-			address = $("<div>");
-			pAddress = $("<p>").html("Adres (Wordt geleverd): ");
-			var ulAddress = $("<ul>");
-			var liStreetValue = $("<li>").html("Straat: " + $("#street").val() + " " + $("#number").val() + " " + $("#bus").val());
-			var liCityValue = $("<li>").html("Stad/Gemeente: " + $("#postalCode").val() + " " + $("#city").val());
-			
-			ulAddress.append(liStreetValue);
-			ulAddress.append(liCityValue);
-			address.append(pAddress);
-			address.append(ulAddress);
-		} else {
-			var pAddress = $("<p>").html("Levering is niet van toepassing.");
-			address.append(pAddress);
+			if($("#deliveryDifferentAddress").is(":checked")){
+				var deliveryInfo = $("<p>").html("Uw bestelling wordt geleverd op onderstaand adres.");
+				pExtraAddress = $("<p>").html("Leveradres: ");
+				var ulExtraAddress = $("<ul>");
+				var liExtraStreetValue = $("<li>").html("Straat: " + $("#extraStreet").val() + " " + $("#extraNumber").val() + " " + $("#extraBus").val());
+				var liExtraCityValue = $("<li>").html("Stad/Gemeente: " + $("#extraPostalCode").val() + " " + $("#extraCity").val());
+				
+				ulExtraAddress.append(liExtraStreetValue);
+				ulExtraAddress.append(liExtraCityValue);
+				extraAddress.append(deliveryInfo);
+				extraAddress.append(pExtraAddress);
+				extraAddress.append(ulExtraAddress);
+			} else {
+				var deliveryInfo = $("p").html("Uw bestelling wordt geleverd op bovenstaand adres.");
+				extraAddress.append(deliveryInfo);
+			}
 		}
 		
 		emailjs.send("gmail_ippondeals","ippondeals_order_template",{
@@ -48,6 +62,7 @@ $(document).ready(function(){
 		  "to_name": $("#lastName").val() + $("#firstName").val(),
 		  "order": orders.html(),
 		  "address": address.html(),
+		  "extraAddress": extraAddress.html(),
 		  "extrainfo": $("#extraInfo").val()
 		}).then(
 		  function() {
