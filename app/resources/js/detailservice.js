@@ -27,7 +27,11 @@ $(document).ready(function(){
 			$("#detailInfo #moreInfo").parent("p").remove();
 		}
 		$("#detailInfo #name").html(cookieProduct.name);
-		$("#detailInfo #niveau").html(cookieProduct.niveau);
+		if(cookieProduct.niveau !== undefined && cookieProduct.niveau == ""){
+			$("#detailInfo #niveau").html(cookieProduct.niveau);
+		} else {
+			$("#detailInfo #niveau").closest("p").remove();
+		}
 		$("#detailInfo #brand").html(cookieProduct.brand);
 		$.each(cookieProduct.pricePerSize, function(index, priceAndSize){			
 			var startSize = parseFloat(priceAndSize.sizes.split("-")[0]);
