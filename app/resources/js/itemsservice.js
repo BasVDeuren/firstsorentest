@@ -1,7 +1,7 @@
 var getItems = function(callback){
 	return $.getJSON( "../resources/json/webshop.json", function( data ) {
 		if(callback !== undefined && callback !== null){
-			callback();
+			callback(data);
 		}
 		return data;
 	}).fail(function() {

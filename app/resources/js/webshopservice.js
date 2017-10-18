@@ -72,7 +72,22 @@ $(document).ready(function(){
 		var image = $("<img>", {"alt":"test", "src":"../resources/img/" + val.imgSrc, "class":"productImg"});
 		var contentDiv = $("<div>", {"class":"content"});
 		var name = $("<p>").html(val.name);
-		var price = $("<p>").html("Vanaf: €" + val.pricePerSize[0].price);
+		
+		var samePrices = true;
+		var previousPrice = undefined
+		$.each(val.pricePerSize, function(indexPrizes, pricePerSize){
+			if(previousPrice !== undefined && pricePerSize.price !== previousPrice){
+				samePrices = false;
+				return;
+			}
+			previousPrice = pricePerSize.price;
+		});
+		var fromText = "";
+		if(!samePrices){
+			fromText = "Vanaf: ";
+		}
+		
+		var price = $("<p>").html(fromText + "€" + val.pricePerSize[0].price);
 		link.append(image);
 		imgDiv.append(link);
 		contentDiv.append(name);

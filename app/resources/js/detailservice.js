@@ -3,6 +3,8 @@ function pickSizePriceSelection(element){
 	$("#amountDiv").show();
 	$("#amount").attr("data-size", $(element).parent("li").data("size"));
 	$("#amount").attr("data-id", $(element).parent("li").data("id"));
+	$("#amount").attr("min", 1);
+	$("#amount").val(1);
 	
 	$("#orderButton").removeAttr("disabled");
 }
@@ -10,7 +12,7 @@ function pickSizePriceSelection(element){
 $(document).ready(function(){
 	$("#amountDiv").hide();
 
-	function setProductDataByWebshopProducts(products){
+	var setProductDataByWebshopProducts = function(products){
 		var cookieProduct;
 		$.each(products, function( index, product ) {
 			if(product.id == getCookie("chosenProduct")){
@@ -27,7 +29,7 @@ $(document).ready(function(){
 			$("#detailInfo #moreInfo").parent("p").remove();
 		}
 		$("#detailInfo #name").html(cookieProduct.name);
-		if(cookieProduct.niveau !== undefined && cookieProduct.niveau == ""){
+		if(cookieProduct.niveau !== undefined && cookieProduct.niveau !== ""){
 			$("#detailInfo #niveau").html(cookieProduct.niveau);
 		} else {
 			$("#detailInfo #niveau").closest("p").remove();
@@ -36,26 +38,27 @@ $(document).ready(function(){
 		$.each(cookieProduct.pricePerSize, function(index, priceAndSize){			
 			var startSize = parseFloat(priceAndSize.sizes.split("-")[0]);
 			var endSize = parseFloat(priceAndSize.sizes.split("-")[1]);
-			var step = 0.5;
-			if(startSize >= 100){
-				step = 10;
-			}
-			for(var i = startSize; i <= endSize; i += step){
-				if(i != 0.5){					
-					var aSizePrice = $("<a>", {"href":"#", "onclick": "pickSizePriceSelection(this)"}).html(i + " - &euro;" + priceAndSize.price);
-					var liSizePrice = $("<li>", {"data-id": cookieProduct.id, "data-size": i, "data-price": priceAndSize.price}).html(aSizePrice);
-					$("#detailInfo #sizeAndPriceDropdown").append(liSizePrice);
+			if(isNaN(startSize)){
+				var aSizePrice = $("<a>", {"href":"#", "onclick": "pickSizePriceSelection(this)"}).html(priceAndSize.sizes + " - &euro;" + priceAndSize.price);
+				var liSizePrice = $("<li>", {"data-id": cookieProduct.id, "data-size": i, "data-price": priceAndSize.price}).html(aSizePrice);
+				$("#detailInfo #sizeAndPriceDropdown").append(liSizePrice);
+			} else {
+				var step = 0.5;
+				if(startSize >= 100){
+					step = 10;
+				}
+				for(var i = startSize; i <= endSize; i += step){
+					if(i != 0.5){					
+						var aSizePrice = $("<a>", {"href":"#", "onclick": "pickSizePriceSelection(this)"}).html(i + " - &euro;" + priceAndSize.price);
+						var liSizePrice = $("<li>", {"data-id": cookieProduct.id, "data-size": i, "data-price": priceAndSize.price}).html(aSizePrice);
+						$("#detailInfo #sizeAndPriceDropdown").append(liSizePrice);
+					}
 				}
 			}
 		});
 	}
 
-	$.getJSON( "../resources/json/webshop.json", function( data ) {
-	  setProductDataByWebshopProducts(data);
-	}).fail(function() {
-		console.log( "An error occurred during fetching webshop data, please try again later." );
-		//ToDo, popup a screen to contact Sören.
-	});
+	getItems(setProductDataByWebshopProducts);
 	
 	$("#backButton").click(function(){
 		window.location.href = './webshop.html';

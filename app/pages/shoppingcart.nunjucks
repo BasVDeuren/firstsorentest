@@ -4,6 +4,9 @@
 {% block extrajs %} 
 	<script type="text/javascript" src="../resources/js/shoppingcart.js"></script>
 {% endblock %}
+{% block extracss %}
+	<link rel="stylesheet" href="../resources/css/awesome-bootstrap-checkbox.css">
+{% endblock %}
 
 {% block content %}
 	<div class="contentBox">

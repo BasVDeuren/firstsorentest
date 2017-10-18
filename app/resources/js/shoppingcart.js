@@ -1,3 +1,5 @@
+var TOTAL_COST_TEXT = "Totaal: € ";
+
 var addToCart = function(id, size, amount){
 	var itemAlreadyInCart = getItemFromCart (id, size);
 	if(itemAlreadyInCart !== undefined){
@@ -69,6 +71,7 @@ var itemsLoaded = false;
 
 $(document).ready(function(){
 	function fillItemData(){
+		var total = 0.0;
 		$(".needItemData").each(function(index, val){
 			$(val).removeClass("needItemData");
 			var type = $(val)[0].tagName;
@@ -78,10 +81,41 @@ $(document).ready(function(){
 				$(val).attr("class", "productImg");
 			} else {
 				if($(val).data("type") == "price"){
-					$(val).html($(val).html() + getPriceForSize(item, $(val).closest("div").find("p.size").data("size")));
+					var itemPrice = getPriceForSize(item, $(val).closest("div").find("p.size").data("size"));
+					$(val).html($(val).html() + itemPrice);
+					total += parseFloat(itemPrice);
 				} else {
 					$(val).html($(val).html() + item[$(val).data("type")]);
 				}
+			}
+		});
+		var deliveryP = $("<p>", {"class": "row"});
+		var deliveryDiv = $("<div>", {"class": "checkbox col-sm-offset-2"});
+		var deliveryInput = $("<input>", {"type": "checkbox", "id": "delivery"});
+		var deliveryLabel = $("<label>", {"for": "delivery"}).html("Leveren? (€" + DELIVERY_COST + " extra voor binnenland)");
+		$(deliveryDiv).append(deliveryInput);
+		$(deliveryDiv).append(deliveryLabel);
+		$(deliveryP).append(deliveryDiv);
+		if(getCookie("delivery") !== undefined && getCookie("delivery") == "true"){
+			total += DELIVERY_COST;
+		}
+		var totalPTag = $("<p>", {"id": "totalP", "class": "col-sm-offset-4 col-md-offset-4 col-lg-offset-2"}).html(TOTAL_COST_TEXT + total);
+		
+		$("#total").append(deliveryP);
+		$("#total").append(totalPTag);
+		
+		if(getCookie("delivery") !== undefined && getCookie("delivery") == "true"){
+			$("#delivery").attr("checked", "checked");
+		}
+		
+		$("#delivery").click(function(){
+			var total = parseFloat($("#totalP").text().substr(TOTAL_COST_TEXT.length));
+			if($("#delivery").is(":checked")){
+				setCookie("delivery", true);
+				$("#totalP").html(TOTAL_COST_TEXT + (total + DELIVERY_COST));
+			} else {
+				setCookie("delivery", false);
+				$("#totalP").html(TOTAL_COST_TEXT + (total - DELIVERY_COST));
 			}
 		});
 	}
@@ -112,6 +146,8 @@ $(document).ready(function(){
 			div.append(contentDiv);
 			shoppingCartDiv.append(div);
 		});
+		var div = $("<div>", {"id":"total", "class": "shoppingCartItem row"});
+		shoppingCartDiv.append(div);
 	}
 	
 	var interval = setInterval(function(){

@@ -306,7 +306,7 @@
 		"pricePerSize":
 			[
 				{
-				"sizes": "180/230", "price": 13
+				"sizes": "180-230", "price": 13
 				}
 			],
 		"imgSrc": "webshop/belts/obiRed.jpg",

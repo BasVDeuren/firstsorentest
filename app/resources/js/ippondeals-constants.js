@@ -1,0 +1,1 @@
+var DELIVERY_COST = 6;

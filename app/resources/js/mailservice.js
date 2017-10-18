@@ -16,14 +16,20 @@ $(document).ready(function(){
 		var accurateOrders = getAccurateOrders();
 		var orders = $("<div>");
 		var ul = $("<ul>");
+		var deliveryP = $("<p>");
 		var total = 0;
 		$(accurateOrders).each(function(i, order){
 			var li = $("<li>", {id: order.id}).html("Naam: " + order.name + ", prijs: €" + order.price + ", aantal: " + order.amount);
 			ul.append(li);
 			total = total + (parseInt(order.amount) * parseInt(order.price));
 		});
+		if(getCookie("delivery") == "true"){
+			total += DELIVERY_COST;
+			$(deliveryP).html("Wordt geleverd, hier wordt €" + DELIVERY_COST + " voor aangerekend.");
+		}
 		orders.append(ul);
-		var totalP = $("<p>", {}).html("Totaal: €" + total);
+		orders.append(deliveryP);
+		var totalP = $("<p>", {}).html("Totaal: € " + total);
 		orders.append(totalP);
 		
 		var address = $("<div>");
@@ -38,7 +44,7 @@ $(document).ready(function(){
 		address.append(ulAddress);
 		
 		var extraAddress = $("<div>");
-		if($("#delivery").is(":checked")){
+		if(getCookie("delivery") == "true") {
 			if($("#deliveryDifferentAddress").is(":checked")){
 				var deliveryInfo = $("<p>").html("Uw bestelling wordt geleverd op onderstaand adres.");
 				pExtraAddress = $("<p>").html("Leveradres: ");
@@ -52,18 +58,19 @@ $(document).ready(function(){
 				extraAddress.append(pExtraAddress);
 				extraAddress.append(ulExtraAddress);
 			} else {
-				var deliveryInfo = $("p").html("Uw bestelling wordt geleverd op bovenstaand adres.");
+				var deliveryInfo = $("<p>").html("Uw bestelling wordt geleverd op bovenstaand adres.");
 				extraAddress.append(deliveryInfo);
 			}
 		}
 		
 		emailjs.send("gmail_ippondeals","ippondeals_order_template",{
 		  "to_email": $("#emailAddress").val(),
-		  "to_name": $("#lastName").val() + $("#firstName").val(),
+		  "to_name": $("#lastName").val() + " " + $("#firstName").val(),
 		  "order": orders.html(),
 		  "address": address.html(),
 		  "extraAddress": extraAddress.html(),
-		  "extrainfo": $("#extraInfo").val()
+		  "extrainfo": $("#extraInfo").val(),
+		  "total": total
 		}).then(
 		  function() {
 			$.unblockUI();

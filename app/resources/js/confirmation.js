@@ -1,19 +1,10 @@
 $(document).ready(function(){
-	$("#deliveryDifferentAddress").closest(".checkbox").hide();
 	$("#extraAddressDiv").hide();
-
-	$("#delivery").change(function(){
-		if($("#deliveryDifferentAddress").closest(".checkbox").is(":visible")){
-			$("#deliveryDifferentAddress").closest(".checkbox").hide();
-		} else {
-			$("#deliveryDifferentAddress").closest(".checkbox").show();
-		}
-		if($("#extraAddressDiv").is(":visible")){
-			$("#extraAddressDiv").hide();
-		}
-		$("#deliveryDifferentAddress").removeAttr("checked");
-	});
 	
+	if(getCookie("delivery") == "false"){
+		$("#deliveryDifferentAddress").hide();
+	}
+
 	$("#deliveryDifferentAddress").change(function(){
 		if($("#extraAddressDiv").is(":visible")){
 			$("#extraAddressDiv").hide();
