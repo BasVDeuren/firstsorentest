@@ -82,6 +82,10 @@ html, body{
 .mizunoLogo {
 	width: 20vw;
 }
+
+.priceList a {
+	text-decoration: underline;
+}
 /* END HOMEPAGE */
 
 /* WEBSHOP */
