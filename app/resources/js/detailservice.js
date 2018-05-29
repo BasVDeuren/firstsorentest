@@ -48,6 +48,11 @@ $(document).ready(function(){
 					step = 10;
 				}
 				for(var i = startSize; i <= endSize; i += step){
+					if(i == 0) {
+						var aSizePrice = $("<a>", {"href":"#", "onclick": "pickSizePriceSelection(this)"}).html("00 - &euro;" + priceAndSize.price);
+						var liSizePrice = $("<li>", {"data-id": cookieProduct.id, "data-size": "00", "data-price": priceAndSize.price}).html(aSizePrice);
+						$("#detailInfo #sizeAndPriceDropdown").append(liSizePrice);
+					}
 					if(i != 0.5){					
 						var aSizePrice = $("<a>", {"href":"#", "onclick": "pickSizePriceSelection(this)"}).html(i + " - &euro;" + priceAndSize.price);
 						var liSizePrice = $("<li>", {"data-id": cookieProduct.id, "data-size": i, "data-price": priceAndSize.price}).html(aSizePrice);

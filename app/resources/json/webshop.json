@@ -1,33 +1,14 @@
 [
 	{
-		"id": "judShir",
-		"name": "JUDOGI SHIRO",
-		"category": "judogi",
-		"niveau": "Type 1 Initiatie",
-		"pricePerSize":
-			[
-				{
-					"sizes": "100-160",
-					"price": 18
-				}
-			],
-		"imgSrc": "webshop/shiro.jpg",
-		"brand":"mizuno"
-	},
-	{
 		"id": "judHaji",
 		"name": "JUDOGI HAJIME",
-		"category": "judogi",
+		"category": "Judopakken",
 		"niveau": "Type 2 Beginner",
 		"pricePerSize":
 			[
 				{
-					"sizes": "100-130",
-					"price": 19
-				},
-				{
-					"sizes": "140-160",
-					"price": 22
+					"sizes": "100-160",
+					"price": 20
 				}
 			],
 		"imgSrc": "webshop/hajime.jpg",
@@ -37,17 +18,17 @@
 	{
 		"id": "judKodo",
 		"name": "JUDOGI KODOMO",
-		"category": "judogi",
+		"category": "Judopakken",
 		"niveau": "Type 3 Recreatief",
 		"pricePerSize":
 			[
 				{
 				"sizes": "110-150",
-				"price": 32
+				"price": 30
 				},
 				{
 				"sizes": "160-190",
-				"price": 37
+				"price": 38
 				}
 			],
 		"imgSrc": "webshop/kodomo.jpg",
@@ -57,21 +38,21 @@
 	{
 		"id": "judHaya",
 		"name": "JUDOGI HAYATO",
-		"category": "judogi",
+		"category": "Judopakken",
 		"niveau": "Type 4 Gevorderd",
 		"pricePerSize":
 			[
 				{
 				"sizes": "110-150",
-				"price": 49
+				"price": 50
 				},
 				{
 				"sizes": "160-170",
-				"price": 58
+				"price": 60
 				},
 				{
 				"sizes": "180-200",
-				"price": 63
+				"price": 65
 				}
 			],
 		"imgSrc": "webshop/hayato.jpg",
@@ -81,7 +62,7 @@
 	{
 		"id": "judHayaBlue",
 		"name": "JUDOGI HAYATO BLUE",
-		"category": "judogi",
+		"category": "Judopakken",
 		"niveau": "Type 4 Gevorderd",
 		"pricePerSize":
 			[
@@ -95,7 +76,7 @@
 				},
 				{
 				"sizes": "180-200",
-				"price": 79
+				"price": 80
 				}
 			],
 		"imgSrc": "webshop/hayato_blue.jpg",
@@ -105,21 +86,21 @@
 	{
 		"id": "judKeik",
 		"name": "JUDOGI KEIKO",
-		"category": "judogi",
+		"category": "Judopakken",
 		"niveau": "Type 5 Laag competitief",
 		"pricePerSize":
 			[
 				{
-				"sizes": "140-150" ,
-				"price": 75
+				"sizes": "140-155" ,
+				"price": 90
 				},
 				{
-				"sizes": "155-170",
-				"price": 82
+				"sizes": "160-180",
+				"price": 100
 				},
 				{
-				"sizes": "175-200",
-				"price": 89
+				"sizes": "185-200",
+				"price": 110
 				}
 			],
 		"imgSrc": "webshop/keiko.jpg",
@@ -129,7 +110,7 @@
 	{
 		"id": "judShia",
 		"name": "JUDOGI SHIAI",
-		"category": "judogi",
+		"category": "Judopakken",
 		"niveau": "Type 6 Competitief",
 		"pricePerSize":
 			[
@@ -138,12 +119,12 @@
 				"price": 145
 				},
 				{
-				"sizes": "2.5-4", 
+				"sizes": "2.5-4.5", 
 				"price": 165
 				},
 				{
-				"sizes": "4.5-7", 
-				"price": 185
+				"sizes": "5-7", 
+				"price": 180
 				}
 			],
 		"imgSrc": "webshop/shiai.jpg",
@@ -153,7 +134,7 @@
 	{
 		"id": "judShiaBlue",
 		"name": "JUDOGI SHIAI BLUE",
-		"category": "judogi",
+		"category": "Judopakken",
 		"niveau": "Type 6 Competitief",
 		"pricePerSize":
 			[
@@ -163,11 +144,11 @@
 				},
 				{
 				"sizes": "2.5-4.5", 
-				"price": 190
+				"price": 195
 				},
 				{
 				"sizes": "5-7", 
-				"price": 199
+				"price": 210
 				}
 			],
 		"imgSrc": "webshop/shiai_blue.jpg",
@@ -177,22 +158,13 @@
 	{
 		"id": "judYush",
 		"name": "JUDOGI YUSHO IJF",
-		"category": "judogi",
+		"category": "Judopakken",
 		"niveau": "Type 7 Hoog competitief",
 		"pricePerSize":
 			[
-				{
-				"sizes": "0-2", 
-				"price": 135
-				},
-				{
-				"sizes": "2.5-4.5", 
-				"price": 155
-				},
-				{
-				"sizes": "5-7", 
-				"price": 169
-				}
+				{"sizes": "0-2", "price": 135},
+				{"sizes": "2.5-4.5", "price": 155},
+				{"sizes": "5-7", "price": 170}
 			],
 		"imgSrc": "webshop/yusho_ijf.jpg",
 		"pdfSrc": "yusho_ijf.pdf",
@@ -201,22 +173,13 @@
 	{
 		"id": "judYushBlue",
 		"name": "JUDOGI YUSHO IJF BLUE",
-		"category": "judogi",
+		"category": "Judopakken",
 		"niveau": "Type 7 Hoog competitief",
 		"pricePerSize":
 			[
-				{
-				"sizes": "0-2", 
-				"price": 165
-				},
-				{
-				"sizes": "2.5-4", 
-				"price": 185
-				},
-				{
-				"sizes": "4.5-7", 
-				"price": 199
-				}
+				{"sizes": "0-2", "price": 165},
+				{"sizes": "2.5-4.5", "price": 185},
+				{"sizes": "5-7", "price": 200}
 			],
 		"imgSrc": "webshop/yusho_ijf_blue.jpg",
 		"pdfSrc": "yusho_ijf.pdf",
@@ -225,13 +188,13 @@
 	{
 		"id": "judYushBest",
 		"name": "JUDOGI YUSHO IJF BEST",
-		"category": "judogi",
+		"category": "Judopakken",
 		"niveau": "Type 8 Hoog competitief",
 		"pricePerSize":
 			[
 				{"sizes": "0-2", "price": 165},
 				{"sizes": "2.5-4.5", "price": 185},
-				{"sizes": "5-7", "price": 209}
+				{"sizes": "5-7", "price": 210}
 			],
 		"imgSrc": "webshop/yusho_ijf_best.jpg",
 		"pdfSrc": "yusho_ijf_best.pdf",
@@ -240,13 +203,13 @@
 	{
 		"id": "judYushBestBlue",
 		"name": "JUDOGI YUSHO IJF BEST BLUE",
-		"category": "judogi",
+		"category": "Judopakken",
 		"niveau": "Type 8 Hoog competitief",
 		"pricePerSize":
 			[
-				{"sizes": "0-2", "price": 189},
-				{"sizes": "2.5-4.5", "price": 209},
-				{"sizes": "5-7", "price": 235}
+				{"sizes": "0-2", "price": 195},
+				{"sizes": "2.5-4.5", "price": 215},
+				{"sizes": "5-7", "price": 240}
 			],
 		"imgSrc": "webshop/yusho_ijf_best_blue.jpg",
 		"pdfSrc": "yusho_ijf_best.pdf",
@@ -255,14 +218,14 @@
 	{
 		"id": "judYushJap",
 		"name": "JUDOGI YUSHO IJF JAPAN",
-		"category": "judogi",
+		"category": "Judopakken",
 		"niveau": "Type 9 Hoog competitief",
 		"pricePerSize":
 			[
-				{"sizes": "1-2", "price": 299},
-				{"sizes": "2.5-4.5", "price": 309},
-				{"sizes": "5-5.5", "price": 329},
-				{"sizes": "6-7", "price": 349}
+				{"sizes": "1-2", "price": 310},
+				{"sizes": "2.5-4.5", "price": 320},
+				{"sizes": "5-5.5", "price": 340},
+				{"sizes": "6-7", "price": 370}
 			],
 		"imgSrc": "webshop/yusho_ijf_japan.jpg",
 		"pdfSrc": "yusho_ijf_japan.pdf",
@@ -271,14 +234,14 @@
 	{
 		"id": "judYushJapBlue",
 		"name": "JUDOGI YUSHO IJF JAPAN BLUE",
-		"category": "judogi",
+		"category": "Judopakken",
 		"niveau": "Type 9 Hoog competitief",
 		"pricePerSize":
 			[
-				{"sizes": "1-2", "price": 330},
-				{"sizes": "2.5-4", "price": 349},
-				{"sizes": "4.5-5.5", "price": 365},
-				{"sizes": "6-7", "price": 395}
+				{"sizes": "1-2", "price": 340},
+				{"sizes": "2.5-4.5", "price": 350},
+				{"sizes": "5-5.5", "price": 370},
+				{"sizes": "6-7", "price": 400}
 			],
 		"imgSrc": "webshop/yusho_ijf_japan_blue.jpg",
 		"pdfSrc": "yusho_ijf_japan.pdf",
@@ -287,137 +250,150 @@
 	{
 		"id": "judYawa",
 		"name": "JUDOGI YAWARA",
-		"category": "judogi",
+		"category": "Judopakken",
 		"niveau": "Type 10 Expert sensei",
 		"pricePerSize":
 			[
-				{"sizes": "1-2", "price": 349},
-				{"sizes": "2.5-4", "price": 355},
-				{"sizes": "4.5-5.5", "price": 375},
-				{"sizes": "6-7", "price": 399}
+				{"sizes": "1-2", "price": 350},
+				{"sizes": "2.5-4.5", "price": 360},
+				{"sizes": "5-5.5", "price": 380},
+				{"sizes": "6-7", "price": 410}
 			],
 		"imgSrc": "webshop/yawara.jpg",
 		"brand":"mizuno"
 	},
 	{
-		"id": "obiRed",
-		"name": "OBI RED",
-		"category": "obi",
+		"id": "obiWhite",
+		"name": "OBI WHITE",
+		"category": "Judo-items",
 		"pricePerSize":
 			[
 				{
-				"sizes": "180-230", "price": 13
+				"sizes": "00-5", "price": 7
 				}
 			],
-		"imgSrc": "webshop/belts/obiRed.jpg",
+		"imgSrc": "webshop/belts/obiWhite.jpg",
 		"brand":"mizuno"
 	},
 	{
-		"id": "obiYell",
-		"name": "OBI YELLOW",
-		"category": "obi",
+		"id": "Judo-itemsRed",
+		"name": "OBI RED",
+		"category": "Judo-items",
 		"pricePerSize":
 			[
-				{"sizes": "00-4", "price": 13}
+				{
+				"sizes": "180-230", "price": 10
+				}
+			],
+		"imgSrc": "webshop/logo-mizuno.jpg",
+		"brand":"mizuno"
+	},
+	{
+		"id": "Judo-itemsYell",
+		"name": "OBI YELLOW",
+		"category": "Judo-items",
+		"pricePerSize":
+			[
+				{"sizes": "00-5", "price": 12}
 			],
 		"imgSrc": "webshop/belts/obiYellow.jpg",
 		"brand":"mizuno"
 	},
 	{
-		"id": "obiOran",
+		"id": "Judo-itemsOran",
 		"name": "OBI ORANGE",
-		"category": "obi",
+		"category": "Judo-items",
 		"pricePerSize":
 			[
-				{"sizes": "00-4", "price": 13}
+				{"sizes": "00-5", "price": 12}
 			],
 		"imgSrc": "webshop/belts/obiOrange.jpg",
 		"brand":"mizuno"
 	},
 	{
-		"id": "obiGree",
+		"id": "Judo-itemsGree",
 		"name": "OBI GREEN",
-		"category": "obi",
+		"category": "Judo-items",
 		"pricePerSize":
 			[
-				{"sizes": "2-6.5", "price": 13}
+				{"sizes": "2-6.5", "price": 12}
 			],
 		"imgSrc": "webshop/belts/obiGreen.jpg",
 		"brand":"mizuno"
 	},
 	{
-		"id": "obiBlue",
+		"id": "Judo-itemsBlue",
 		"name": "OBI BLUE",
-		"category": "obi",
+		"category": "Judo-items",
 		"pricePerSize":
 			[
-				{"sizes": "2-6.5", "price": 13}
+				{"sizes": "2-6.5", "price": 12}
 			],
 		"imgSrc": "webshop/belts/obiBlue.jpg",
 		"brand":"mizuno"
 	},
 	{
-		"id": "obiBrow",
+		"id": "Judo-itemsBrow",
 		"name": "OBI BROWN",
-		"category": "obi",
+		"category": "Judo-items",
 		"pricePerSize":
 			[
-				{"sizes": "2-7", "price": 13}
+				{"sizes": "2-7", "price": 12}
 			],
 		"imgSrc": "webshop/belts/obiBrown.jpg",
 		"brand":"mizuno"
 	},
 	{
-		"id": "obiBlac",
+		"id": "Judo-itemsBlac",
 		"name": "OBI BLACK",
-		"category": "obi",
+		"category": "Judo-items",
 		"pricePerSize":
 			[
-				{"sizes": "1-8", "price": 19}
+				{"sizes": "2-7", "price": 20}
 			],
 		"imgSrc": "webshop/belts/obiBlack.jpg",
 		"brand":"mizuno"
 	},
 	{
-		"id": "obiBlacIjf",
+		"id": "Judo-itemsBlacIjf",
 		"name": "OBI BLACK IJF",
-		"category": "obi",
+		"category": "Judo-items",
 		"pricePerSize":
 			[
-				{"sizes": "1-8", "price": 25}
+				{"sizes": "2-7", "price": 25}
 			],
 		"imgSrc": "webshop/belts/obiBlackIjf.jpg",
 		"brand":"mizuno"
 	},
 	{
-		"id": "obiBlacIjfBest",
+		"id": "Judo-itemsBlacIjfBest",
 		"name": "OBI BLACK IJF BEST",
-		"category": "obi",
+		"category": "Judo-items",
 		"pricePerSize":
 			[
-				{"sizes": "2-8", "price": 45}
+				{"sizes": "2-7", "price": 45}
 			],
 		"imgSrc": "webshop/belts/obiBlackIjfBest.jpg",
 		"brand":"mizuno"
 	},
 	{
-		"id": "obiBlacJap",
+		"id": "Judo-itemsBlacJap",
 		"name": "OBI BLACK JAPAN",
-		"category": "obi",
+		"category": "Judo-items",
 		"pricePerSize":
 			[
-				{"sizes": "2-8", "price": 49}
+				{"sizes": "2-7", "price": 50}
 			],
 		"imgSrc": "webshop/belts/obiBlackJapan.jpg",
 		"brand":"mizuno"
 	},
 	{
-		"id": "obiMast",
+		"id": "Judo-itemsMast",
 		"name": "OBI MASTER BELT",
-		"category": "obi",
+		"category": "Judo-items",
 		"pricePerSize":
 			[
-				{"sizes": "2-8", "price": 65}
+				{"sizes": "2-7", "price": 70}
 			],
 		"imgSrc": "webshop/belts/obiMasterBelt.jpg",
 		"brand":"mizuno"
@@ -425,11 +401,11 @@
 	{
 		"id": "bagBlaWh",
 		"name": "SHUNZUI BAG BLACK-WHITE KANJI",
-		"category": "bags",
+		"category": "Judo-items",
 		"pricePerSize":
 			[
-				{"sizes": "small", "price": 39},
-				{"sizes": "medium", "price": 49}
+				{"sizes": "small", "price": 40},
+				{"sizes": "medium", "price": 50}
 			],
 		"imgSrc": "webshop/bags/bag1.jpg",
 		"brand":"mizuno"
@@ -437,11 +413,11 @@
 	{
 		"id": "bagBluWh",
 		"name": "SHUNZUI BAG BLUE-WHITE KANJI",
-		"category": "bags",
+		"category": "Judo-items",
 		"pricePerSize":
 			[
-				{"sizes": "small", "price": 39},
-				{"sizes": "medium", "price": 49}
+				{"sizes": "small", "price": 40},
+				{"sizes": "medium", "price": 50}
 			],
 		"imgSrc": "webshop/bags/bag1.jpg",
 		"brand":"mizuno"
@@ -449,11 +425,11 @@
 	{
 		"id": "bagSiBl",
 		"name": "SHUNZUI BAG SILVER-BLACK LOGO",
-		"category": "bags",
+		"category": "Judo-items",
 		"pricePerSize":
 			[
-				{"sizes": "small", "price": 39},
-				{"sizes": "medium", "price": 49}
+				{"sizes": "small", "price": 40},
+				{"sizes": "medium", "price": 50}
 			],
 		"imgSrc": "webshop/bags/bag1.jpg",
 		"brand":"mizuno"
@@ -461,13 +437,68 @@
 	{
 		"id": "bagBluWhLogo",
 		"name": "SHUNZUI BAG BLUE-WHITE LOGO",
-		"category": "bags",
+		"category": "Judo-items",
 		"pricePerSize":
 			[
-				{"sizes": "small", "price": 39},
-				{"sizes": "medium", "price": 49}
+				{"sizes": "small", "price": 40},
+				{"sizes": "medium", "price": 50}
 			],
 		"imgSrc": "webshop/bags/bag1.jpg",
+		"brand":"mizuno"
+	},
+	{
+		"id": "panKodo",
+		"name": "PANTS KODOMO",
+		"category": "Judo-items",
+		"pricePerSize":
+			[
+				{"sizes": "110-190", "price": 15}
+			],
+		"imgSrc": "webshop/logo-mizuno.jpg",
+		"brand":"mizuno"
+	},
+	{
+		"id": "panYushIjf",
+		"name": "PANTS YUSHO IJF",
+		"category": "Judo-items",
+		"pricePerSize":
+			[
+				{"sizes": "1-7", "price": 35}
+			],
+		"imgSrc": "webshop/logo-mizuno.jpg",
+		"brand":"mizuno"
+	},
+	{
+		"id": "panYushIjfBlue",
+		"name": "PANTS YUSHO IJF BLUE",
+		"category": "Judo-items",
+		"pricePerSize":
+			[
+				{"sizes": "1-7", "price": 40}
+			],
+		"imgSrc": "webshop/logo-mizuno.jpg",
+		"brand":"mizuno"
+	},
+	{
+		"id": "panYushIjfBest",
+		"name": "PANTS YUSHO IJF BEST",
+		"category": "Judo-items",
+		"pricePerSize":
+			[
+				{"sizes": "1-7", "price": 50}
+			],
+		"imgSrc": "webshop/logo-mizuno.jpg",
+		"brand":"mizuno"
+	},
+	{
+		"id": "panYushIjfBestBlue",
+		"name": "PANTS YUSHO IJF BEST BLUE",
+		"category": "Judo-items",
+		"pricePerSize":
+			[
+				{"sizes": "1-7", "price": 60}
+			],
+		"imgSrc": "webshop/logo-mizuno.jpg",
 		"brand":"mizuno"
 	}
 ] 
